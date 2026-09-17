@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Translate page"
+  }
+}

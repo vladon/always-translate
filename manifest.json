@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extName__",
+  "version": "1.1.0",
+  "default_locale": "en_US",
+  "description": "__MSG_extDescription__",
+  "author": "vladon",
+  "homepage_url": "https://github.com/vladon/always-translate",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "always-translate@vladon.dev",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["websiteContent"]
+      }
+    }
+  },
+  "icons": {
+    "32": "icons/translate.svg",
+    "64": "icons/translate.svg"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "https://translate.googleapis.com/*"
+  ],
+  "page_action": {
+    "default_icon": {
+      "32": "icons/translate.svg"
+    },
+    "default_title": "__MSG_defaultTitle__",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

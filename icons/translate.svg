@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0060df"/>
+  <text x="10" y="21.5" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="21.5" y="26" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#bfd8ff" text-anchor="middle">文</text>
+</svg>

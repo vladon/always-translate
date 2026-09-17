@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      width: 252px;
+      margin: 0;
+      padding: 12px;
+      font: 13px/1.4 system-ui, sans-serif;
+    }
+    h1 { font-size: 13px; font-weight: 600; margin: 0 0 8px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+    }
+    button.chip {
+      padding: 5px 2px;
+      font: 12.5px system-ui, sans-serif;
+      border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+      border-radius: 6px;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    button.chip:hover { border-color: #0060df; }
+    button.chip.selected {
+      background: #0060df;
+      border-color: #0060df;
+      color: #fff;
+    }
+    #status {
+      min-height: 17px;
+      margin: 10px 0 8px;
+      opacity: .75;
+    }
+    #status.error { color: #d70022; opacity: 1; }
+    #action {
+      width: 100%;
+      padding: 8px;
+      font: 600 13px system-ui, sans-serif;
+      border: 0;
+      border-radius: 6px;
+      background: #0060df;
+      color: #fff;
+      cursor: pointer;
+    }
+    #action.restore { background: #1ba45c; }
+    #action:disabled { opacity: .55; cursor: default; }
+  </style>
+</head>
+<body>
+  <h1>Перевод страницы</h1>
+  <div class="grid" id="langs"></div>
+  <div id="status"></div>
+  <button id="action">Перевести</button>
+  <script src="popup.js"></script>
+</body>
+</html>
