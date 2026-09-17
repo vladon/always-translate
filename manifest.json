@@ -8,7 +8,7 @@
   "homepage_url": "https://github.com/vladon/always-translate",
   "browser_specific_settings": {
     "gecko": {
-      "id": "always-translate@vladon.dev",
+      "id": "always-translate-extension@vladon.dev",
       "strict_min_version": "140.0",
       "data_collection_permissions": {
         "required": ["websiteContent"]
