@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "Seite übersetzen"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "Seite übersetzen"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "Sprache wählen und auf „Übersetzen“ klicken"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "Übersetzen"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "Übersetze…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "Original anzeigen"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "Übersetzung… $PERCENT$ %",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "Übersetzt: $FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "Übersetzungsfehler: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "Seite ist bereits auf $LANG$",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "Kein Text zum Übersetzen gefunden"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "Fehler: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "Seite ist bereits in der gewählten Sprache"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "Kein Text zum Übersetzen"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "unbekannt"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "Kein aktiver Tab"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "Skript nicht verfügbar — Seite neu laden"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "Keine Antwort vom Übersetzungsdienst"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "Dienst lieferte ein unvollständiges Ergebnis"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "Ungültige Antwort des Übersetzungsdienstes"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "Übersetzung… $DONE$/$TOTAL$ ($PERCENT$ %)",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "Original wiederhergestellt"
   }
 }

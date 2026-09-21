@@ -2,6 +2,9 @@
 
 const API = typeof browser !== "undefined" ? browser : chrome;
 
+// Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.
+const msg = (key, args) => API.i18n.getMessage(key, args) || key;
+
 const LANGS = [
   ["ru", "Русский"], ["en", "English"], ["uk", "Українська"],
   ["de", "Deutsch"], ["fr", "Français"], ["es", "Español"],
@@ -27,12 +30,12 @@ async function getActiveTabId() {
 async function sendToActiveTab(message) {
   const tabId = await getActiveTabId();
   if (tabId == null) {
-    return { ok: false, error: "нет активной вкладки" };
+    return { ok: false, error: msg("errNoTab") };
   }
   try {
     return await API.tabs.sendMessage(tabId, message);
   } catch (e) {
-    return { ok: false, error: "обновите страницу" };
+    return { ok: false, error: msg("errRefresh") };
   }
 }
 
@@ -57,30 +60,30 @@ function render() {
   let busy = false;
   switch (kind) {
     case "progress":
-      text = `Перевод… ${state.total ? Math.round(state.done / state.total * 100) : 0}%`;
+      text = msg("titleProgress", [state.total ? Math.round(state.done / state.total * 100) : 0]);
       busy = true;
       break;
     case "done":
-      text = `Переведено: ${state.from} → ${state.to}`;
+      text = msg("titleDone", [state.from, state.to]);
       break;
     case "error":
-      text = `Ошибка: ${state.message || "неизвестно"}`;
+      text = msg("statusError", [state.message || msg("errorUnknown")]);
       break;
     case "same":
-      text = "Страница уже на выбранном языке";
+      text = msg("statusSame");
       break;
     case "nothing":
-      text = "Нет текста для перевода";
+      text = msg("statusNothing");
       break;
     default:
-      text = "Выберите язык и нажмите «Перевести»";
+      text = msg("popupHint");
   }
 
   statusEl.textContent = text;
   statusEl.classList.toggle("error", kind === "error");
   action.disabled = busy;
   action.classList.toggle("restore", kind === "done");
-  action.textContent = busy ? "Перевод…" : (kind === "done" ? "Показать оригинал" : "Перевести");
+  action.textContent = busy ? msg("btnTranslating") : (kind === "done" ? msg("btnShowOriginal") : msg("btnTranslate"));
 
   for (const btn of document.querySelectorAll("button.chip")) {
     btn.classList.toggle("selected", btn.dataset.lang === selected);
@@ -105,6 +108,15 @@ function buildLangs() {
 }
 
 (async () => {
+  const uiLang = API.i18n.getUILanguage();
+  document.documentElement.lang = uiLang;
+  if (["ar", "he", "fa"].includes(uiLang.split("-")[0].toLowerCase())) {
+    document.documentElement.dir = "rtl";
+  }
+  document.getElementById("title").textContent = msg("popupTitle");
+  document.title = msg("popupTitle");
+  document.getElementById("action").textContent = msg("btnTranslate");
+
   buildLangs();
 
   const stored = await API.storage.local.get("targetLang").catch(() => ({}));

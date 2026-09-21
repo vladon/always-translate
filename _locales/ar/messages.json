@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "ترجمة الصفحة"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "ترجمة الصفحة"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "اختر لغة ثم اضغط «ترجمة»"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "ترجمة"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "جارٍ الترجمة…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "عرض النص الأصلي"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "جارٍ الترجمة… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "تمت الترجمة: $FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "خطأ في الترجمة: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "الصفحة باللغة $LANG$ بالفعل",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "لم يُعثر على نص للترجمة"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "خطأ: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "الصفحة باللغة المختارة بالفعل"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "لا يوجد نص للترجمة"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "غير معروف"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "لا توجد علامة تبويب نشطة"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "البرنامج النصي غير متاح — حدِّث الصفحة"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "لا استجابة من خدمة الترجمة"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "أعادت الخدمة نتيجة غير مكتملة"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "استجابة غير صالحة من خدمة الترجمة"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "جارٍ الترجمة… $DONE$/$TOTAL$ ($PERCENT$%)",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "تمت استعادة النص الأصلي"
   }
 }

@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "ページを翻訳"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "ページ翻訳"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "言語を選んで「翻訳」をクリック"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "翻訳"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "翻訳中…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "原文を表示"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "翻訳中… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "翻訳済み: $FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "翻訳エラー: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "このページはすでに$LANG$です",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "翻訳するテキストが見つかりません"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "エラー: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "ページはすでに選択した言語です"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "翻訳するテキストがありません"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "不明"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "アクティブなタブがありません"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "スクリプト利用不可 — ページを再読み込みしてください"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "翻訳サービスから応答がありません"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "サービスが不完全な結果を返しました"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "翻訳サービスの応答が不正です"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "翻訳中… $DONE$/$TOTAL$（$PERCENT$%）",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "原文に戻しました"
   }
 }

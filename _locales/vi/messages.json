@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "Dịch trang"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "Dịch trang web"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "Chọn ngôn ngữ rồi nhấn «Dịch»"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "Dịch"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "Đang dịch…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "Hiện bản gốc"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "Đang dịch… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "Đã dịch: $FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "Lỗi dịch: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "Trang đã ở ngôn ngữ $LANG$",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "Không tìm thấy văn bản để dịch"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "Lỗi: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "Trang đã ở ngôn ngữ đã chọn"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "Không có văn bản để dịch"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "không rõ"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "Không có thẻ đang hoạt động"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "Tập lệnh không khả dụng — hãy tải lại trang"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "Không có phản hồi từ dịch vụ dịch thuật"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "Dịch vụ trả về kết quả không đầy đủ"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "Phản hồi không hợp lệ từ dịch vụ dịch thuật"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "Đang dịch… $DONE$/$TOTAL$ ($PERCENT$%)",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "Đã khôi phục bản gốc"
   }
 }

@@ -14,13 +14,15 @@
 const API = typeof browser !== "undefined" ? browser : chrome;
 const SUPPORTED_URL = /^https?:/i;
 
+// Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.
+const msg = (key, args) => API.i18n.getMessage(key, args) || key;
+
 const ICONS = {
   idle: "icons/translate.svg",
   progress: ["icons/translate-progress-1.svg", "icons/translate-progress-2.svg"],
   done: "icons/translate-active.svg",
   error: "icons/translate-error.svg",
 };
-const DEFAULT_TITLE = "Перевести страницу";
 
 // Per-tab UI state reported by the content script.
 // kinds: idle | progress | done | error | same | nothing
@@ -49,13 +51,13 @@ function stopAnim(tabId) {
 function applyState(tabId) {
   const state = tabState.get(tabId) || { kind: "idle" };
   stopAnim(tabId);
-  let title = DEFAULT_TITLE;
+  let title = msg("defaultTitle");
   let icon = ICONS.idle;
 
   switch (state.kind) {
     case "progress": {
       const pct = state.total ? Math.round((state.done / state.total) * 100) : 0;
-      title = `Перевод… ${pct}%`;
+      title = msg("titleProgress", [pct]);
       const frames = ICONS.progress;
       let frame = 0;
       icon = frames[0];
@@ -66,18 +68,18 @@ function applyState(tabId) {
       break;
     }
     case "done":
-      title = `Переведено: ${state.from} → ${state.to}`;
+      title = msg("titleDone", [state.from, state.to]);
       icon = ICONS.done;
       break;
     case "error":
-      title = `Ошибка перевода: ${state.message}`;
+      title = msg("titleError", [state.message]);
       icon = ICONS.error;
       break;
     case "same":
-      title = `Страница уже на выбранном языке (${state.lang || ""})`;
+      title = msg("titleSame", [state.lang || "?"]);
       break;
     case "nothing":
-      title = "Не найден текст для перевода";
+      title = msg("titleNothing");
       break;
   }
 
@@ -160,7 +162,7 @@ async function handleTranslate(payload) {
     }
     const data = await fetchWithRetry(url);
     if (!Array.isArray(data) || data.length !== items.length) {
-      throw new Error("Некорректный ответ сервиса");
+      throw new Error(msg("errBadResponse"));
     }
     const results = data.map(entry =>
       Array.isArray(entry)
@@ -187,7 +189,7 @@ async function forwardToTab(tabId, message) {
   try {
     return await API.tabs.sendMessage(tabId, message);
   } catch (e) {
-    return { ok: false, error: "content script unavailable — обновите страницу" };
+    return { ok: false, error: msg("errRefresh") };
   }
 }
 
@@ -225,7 +227,7 @@ API.runtime.onMessage.addListener((message, sender) => {
     return (async () => {
       const tabId = await getActiveTabId();
       if (tabId == null) {
-        return { ok: false, error: "нет активной вкладки" };
+        return { ok: false, error: msg("errNoTab") };
       }
       if (message.lang) {
         await API.storage.local.set({ targetLang: message.lang });
@@ -238,7 +240,7 @@ API.runtime.onMessage.addListener((message, sender) => {
     return (async () => {
       const tabId = await getActiveTabId();
       if (tabId == null) {
-        return { ok: false, error: "нет активной вкладки" };
+        return { ok: false, error: msg("errNoTab") };
       }
       return forwardToTab(tabId, { type: "at:restore" });
     })();

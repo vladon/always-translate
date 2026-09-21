@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "翻译网页"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "网页翻译"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "选择语言，然后点击「翻译」"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "翻译"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "翻译中…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "显示原文"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "翻译中… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "已翻译：$FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "翻译错误：$MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "网页已经是$LANG$",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "未找到可翻译的文本"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "错误：$MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "网页已是所选语言"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "没有可翻译的文本"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "未知"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "没有活动标签页"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "脚本不可用——请刷新页面"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "翻译服务无响应"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "服务返回的结果不完整"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "翻译服务返回了无效响应"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "翻译中… $DONE$/$TOTAL$（$PERCENT$%）",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "已恢复原文"
   }
 }

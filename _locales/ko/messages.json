@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "페이지 번역"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "웹페이지 번역"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "언어를 선택하고 «번역»을 클릭하세요"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "번역"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "번역 중…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "원문 보기"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "번역 중… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "번역됨: $FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "번역 오류: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "페이지가 이미$LANG$입니다",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "번역할 텍스트를 찾지 못했습니다"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "오류: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "페이지가 이미 선택한 언어입니다"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "번역할 텍스트가 없습니다"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "알 수 없음"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "활성 탭이 없습니다"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "스크립트를 사용할 수 없습니다 — 페이지를 새로 고침하세요"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "번역 서비스의 응답이 없습니다"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "서비스가 불완전한 결과를 반환했습니다"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "번역 서비스가 잘못된 응답을 반환했습니다"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "번역 중… $DONE$/$TOTAL$($PERCENT$%)",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "원문으로 복원되었습니다"
   }
 }

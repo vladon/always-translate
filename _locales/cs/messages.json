@@ -6,25 +6,25 @@
     "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
-    "message": "Translate page"
+    "message": "Přeložit stránku"
   },
   "popupTitle": {
-    "message": "Translate page"
+    "message": "Překlad stránky"
   },
   "popupHint": {
-    "message": "Pick a language and click “Translate”"
+    "message": "Vyberte jazyk a klikněte na «Přeložit»"
   },
   "btnTranslate": {
-    "message": "Translate"
+    "message": "Přeložit"
   },
   "btnTranslating": {
-    "message": "Translating…"
+    "message": "Překládá se…"
   },
   "btnShowOriginal": {
-    "message": "Show original"
+    "message": "Zobrazit originál"
   },
   "titleProgress": {
-    "message": "Translating… $PERCENT$%",
+    "message": "Překlad… $PERCENT$%",
     "placeholders": {
       "percent": {
         "content": "$1"
@@ -32,7 +32,7 @@
     }
   },
   "titleDone": {
-    "message": "Translated: $FROM$ → $TO$",
+    "message": "Přeloženo: $FROM$ → $TO$",
     "placeholders": {
       "from": {
         "content": "$1"
@@ -43,7 +43,7 @@
     }
   },
   "titleError": {
-    "message": "Translation error: $MESSAGE$",
+    "message": "Chyba překladu: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -51,7 +51,7 @@
     }
   },
   "titleSame": {
-    "message": "Page is already in $LANG$",
+    "message": "Stránka je již v jazyce $LANG$",
     "placeholders": {
       "lang": {
         "content": "$1"
@@ -59,10 +59,10 @@
     }
   },
   "titleNothing": {
-    "message": "No text found to translate"
+    "message": "Nenalezen žádný text k překladu"
   },
   "statusError": {
-    "message": "Error: $MESSAGE$",
+    "message": "Chyba: $MESSAGE$",
     "placeholders": {
       "message": {
         "content": "$1"
@@ -70,31 +70,31 @@
     }
   },
   "statusSame": {
-    "message": "Page is already in the selected language"
+    "message": "Stránka je již ve zvoleném jazyce"
   },
   "statusNothing": {
-    "message": "No text to translate"
+    "message": "Není zde žádný text k překladu"
   },
   "errorUnknown": {
-    "message": "unknown"
+    "message": "neznámé"
   },
   "errNoTab": {
-    "message": "No active tab"
+    "message": "Žádná aktivní karta"
   },
   "errRefresh": {
-    "message": "Content script unavailable — refresh the page"
+    "message": "Skript není k dispozici — obnovte stránku"
   },
   "errNoResponse": {
-    "message": "No response from the translation service"
+    "message": "Žádná odpověď od překladové služby"
   },
   "errIncomplete": {
-    "message": "Service returned an incomplete result"
+    "message": "Služba vrátila neúplný výsledek"
   },
   "errBadResponse": {
-    "message": "Invalid response from the translation service"
+    "message": "Neplatná odpověď překladové služby"
   },
   "pillProgress": {
-    "message": "Translating… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "message": "Překlad… $DONE$/$TOTAL$ ($PERCENT$%)",
     "placeholders": {
       "done": {
         "content": "$1"
@@ -108,6 +108,6 @@
     }
   },
   "toastRestore": {
-    "message": "Original restored"
+    "message": "Originál byl obnoven"
   }
 }

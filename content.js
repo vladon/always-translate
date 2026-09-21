@@ -15,6 +15,9 @@
   }
   window.__alwaysTranslateLoaded = true;
 
+  // Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.
+  const msg = (key, args) => browser.i18n.getMessage(key, args) || key;
+
   const SKIP_TAGS = new Set([
     "SCRIPT", "STYLE", "NOSCRIPT", "TEMPLATE", "IFRAME", "CANVAS",
     "SVG", "MATH", "CODE", "PRE", "TEXTAREA", "INPUT", "SELECT", "OPTION",
@@ -227,10 +230,10 @@
           return;
         }
         if (!resp || !resp.ok) {
-          throw new Error((resp && resp.error) || "нет ответа сервиса");
+          throw new Error((resp && resp.error) || msg("errNoResponse"));
         }
         if (resp.results.length !== texts.length) {
-          throw new Error("сервис вернул неполный результат");
+          throw new Error(msg("errIncomplete"));
         }
         const byEntry = new Map();
         batch.items.forEach((item, i) => {
@@ -318,27 +321,27 @@
       const nodes = collectAll();
       if (!nodes.length) {
         report({ kind: "nothing" });
-        toast("Не найден текст для перевода");
+        toast(msg("titleNothing"));
         return;
       }
-      showPill(`Перевод… 0/${nodes.length}`);
+      showPill(msg("pillProgress", [0, nodes.length, 0]));
       report({ kind: "progress", done: 0, total: nodes.length });
 
       const probeResp = await translateTexts([buildProbe(nodes)], tl);
       if (!probeResp || !probeResp.ok) {
-        throw new Error((probeResp && probeResp.error) || "нет ответа сервиса");
+        throw new Error((probeResp && probeResp.error) || msg("errNoResponse"));
       }
       const from = String((probeResp.results[0] && probeResp.results[0].lang) || "?").split("-")[0];
       if (from === tl.split("-")[0]) {
         hidePill();
         report({ kind: "same", lang: from });
-        toast(`Страница уже на выбранном языке (${from})`);
+        toast(msg("titleSame", [from]));
         return;
       }
 
       lastTarget = tl;
       await translateNodes(nodes, tl, (done, total) => {
-        showPill(`Перевод… ${done}/${total} (${Math.round(done / total * 100)}%)`);
+        showPill(msg("pillProgress", [done, total, Math.round(done / total * 100)]));
         report({ kind: "progress", done, total });
       });
       hidePill();
@@ -346,11 +349,11 @@
       active = true;
       startObserver();
       report({ kind: "done", from, to: tl });
-      toast(`✓ Переведено: ${from} → ${tl}`);
+      toast("✓ " + msg("titleDone", [from, tl]));
     } catch (e) {
       hidePill();
       report({ kind: "error", message: String((e && e.message) || e) });
-      toast("Ошибка перевода: " + ((e && e.message) || e));
+      toast(msg("titleError", [String((e && e.message) || e)]));
       if (originals.size) {
         // Partial translation applied — allow reverting what was done.
         active = true;
@@ -374,7 +377,7 @@
     hidePill();
     report({ kind: "idle" });
     if (!silent) {
-      toast("Возвращён оригинал");
+      toast(msg("toastRestore"));
     }
   }
 

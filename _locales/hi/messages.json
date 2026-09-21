@@ -1,0 +1,113 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "पेज का अनुवाद करें"
+  },
+  "popupTitle": {
+    "message": "पेज अनुवाद"
+  },
+  "popupHint": {
+    "message": "भाषा चुनें और «अनुवाद» पर क्लिक करें"
+  },
+  "btnTranslate": {
+    "message": "अनुवाद करें"
+  },
+  "btnTranslating": {
+    "message": "अनुवाद हो रहा है…"
+  },
+  "btnShowOriginal": {
+    "message": "मूल दिखाएँ"
+  },
+  "titleProgress": {
+    "message": "अनुवाद… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "अनुवादित: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "अनुवाद त्रुटि: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "पेज पहले से $LANG$ में है",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "अनुवाद के लिए कोई पाठ नहीं मिला"
+  },
+  "statusError": {
+    "message": "त्रुटि: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "पेज पहले से चुनी गई भाषा में है"
+  },
+  "statusNothing": {
+    "message": "अनुवाद के लिए कोई पाठ नहीं"
+  },
+  "errorUnknown": {
+    "message": "अज्ञात"
+  },
+  "errNoTab": {
+    "message": "कोई सक्रिय टैब नहीं"
+  },
+  "errRefresh": {
+    "message": "स्क्रिप्ट अनुपलब्ध — पेज पुनः लोड करें"
+  },
+  "errNoResponse": {
+    "message": "अनुवाद सेवा से कोई प्रतिक्रिया नहीं"
+  },
+  "errIncomplete": {
+    "message": "सेवा ने अधूरा परिणाम लौटाया"
+  },
+  "errBadResponse": {
+    "message": "अनुवाद सेवा से अमान्य प्रतिक्रिया"
+  },
+  "pillProgress": {
+    "message": "अनुवाद… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "मूल पुनर्स्थापित"
+  }
+}

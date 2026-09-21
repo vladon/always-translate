@@ -7,5 +7,107 @@
   },
   "defaultTitle": {
     "message": "Перевести страницу"
+  },
+  "popupTitle": {
+    "message": "Перевод страницы"
+  },
+  "popupHint": {
+    "message": "Выберите язык и нажмите «Перевести»"
+  },
+  "btnTranslate": {
+    "message": "Перевести"
+  },
+  "btnTranslating": {
+    "message": "Перевод…"
+  },
+  "btnShowOriginal": {
+    "message": "Показать оригинал"
+  },
+  "titleProgress": {
+    "message": "Перевод… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Переведено: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Ошибка перевода: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Страница уже на языке $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Не найден текст для перевода"
+  },
+  "statusError": {
+    "message": "Ошибка: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Страница уже на выбранном языке"
+  },
+  "statusNothing": {
+    "message": "Нет текста для перевода"
+  },
+  "errorUnknown": {
+    "message": "неизвестно"
+  },
+  "errNoTab": {
+    "message": "Нет активной вкладки"
+  },
+  "errRefresh": {
+    "message": "Скрипт недоступен — обновите страницу"
+  },
+  "errNoResponse": {
+    "message": "Нет ответа от сервиса перевода"
+  },
+  "errIncomplete": {
+    "message": "Сервис вернул неполный результат"
+  },
+  "errBadResponse": {
+    "message": "Некорректный ответ сервиса перевода"
+  },
+  "pillProgress": {
+    "message": "Перевод… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Возвращён оригинал"
   }
 }
