@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Tõlgi leht"
+  },
+  "popupTitle": {
+    "message": "Tõlgi leht"
+  },
+  "popupHint": {
+    "message": "Vali keel ja klõpsa „Tõlgi“"
+  },
+  "btnTranslate": {
+    "message": "Tõlgi"
+  },
+  "btnTranslating": {
+    "message": "Tõlgib…"
+  },
+  "btnShowOriginal": {
+    "message": "Kuva originaal"
+  },
+  "titleProgress": {
+    "message": "Tõlgitakse… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Tõlgitud: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Tõlkeviga: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Leht on juba $LANG$ keeles",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Tõlgitavat teksti ei leitud"
+  },
+  "statusError": {
+    "message": "Viga: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Leht on juba valitud keeles"
+  },
+  "statusNothing": {
+    "message": "Tõlgitavat teksti pole"
+  },
+  "errorUnknown": {
+    "message": "teadmata"
+  },
+  "errNoTab": {
+    "message": "Aktiivset vahelehte pole"
+  },
+  "errRefresh": {
+    "message": "Sisukript pole saadaval — laadi leht uuesti"
+  },
+  "errNoResponse": {
+    "message": "Tõlketeenuselt ei saanud vastust"
+  },
+  "errIncomplete": {
+    "message": "Teenus tagastas puuduliku tulemuse"
+  },
+  "errBadResponse": {
+    "message": "Vigane vastus tõlketeenuselt"
+  },
+  "pillProgress": {
+    "message": "Tõlgitakse… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Originaal taastati"
+  },
+  "popupSearch": {
+    "message": "Otsi"
+  }
+}

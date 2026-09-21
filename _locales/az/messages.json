@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Səhifəni tərcümə et"
+  },
+  "popupTitle": {
+    "message": "Səhifəni tərcümə et"
+  },
+  "popupHint": {
+    "message": "Dil seçin və „Tərcümə et“ düyməsinə basın"
+  },
+  "btnTranslate": {
+    "message": "Tərcümə et"
+  },
+  "btnTranslating": {
+    "message": "Tərcümə olunur…"
+  },
+  "btnShowOriginal": {
+    "message": "Orijinalı göstər"
+  },
+  "titleProgress": {
+    "message": "Tərcümə olunur… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Tərcümə edildi: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Tərcümə xətası: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Səhifə artıq $LANG$ dilindədir",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Tərcümə etmək üçün mətn tapılmadı"
+  },
+  "statusError": {
+    "message": "Xəta: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Səhifə artıq seçilmiş dildədir"
+  },
+  "statusNothing": {
+    "message": "Tərcümə etmək üçün mətn yoxdur"
+  },
+  "errorUnknown": {
+    "message": "naməlum"
+  },
+  "errNoTab": {
+    "message": "Aktiv vərəq yoxdur"
+  },
+  "errRefresh": {
+    "message": "Məzmun skripti əlçatmazdır — səhifəni yeniləyin"
+  },
+  "errNoResponse": {
+    "message": "Tərcümə xidmətindən cavab yoxdur"
+  },
+  "errIncomplete": {
+    "message": "Xidmət natamam nəticə qaytardı"
+  },
+  "errBadResponse": {
+    "message": "Tərcümə xidmətindən yanlış cavab alındı"
+  },
+  "pillProgress": {
+    "message": "Tərcümə olunur… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Orijinal bərpa edildi"
+  },
+  "popupSearch": {
+    "message": "Axtar"
+  }
+}

@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "原文に戻しました"
+  },
+  "popupSearch": {
+    "message": "検索"
   }
 }

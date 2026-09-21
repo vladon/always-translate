@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "मूल पुनर्स्थापित"
+  },
+  "popupSearch": {
+    "message": "खोजें"
   }
 }

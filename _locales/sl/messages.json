@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Prevedi stran"
+  },
+  "popupTitle": {
+    "message": "Prevedi stran"
+  },
+  "popupHint": {
+    "message": "Izberite jezik in kliknite „Prevedi“"
+  },
+  "btnTranslate": {
+    "message": "Prevedi"
+  },
+  "btnTranslating": {
+    "message": "Prevajanje…"
+  },
+  "btnShowOriginal": {
+    "message": "Pokaži izvirnik"
+  },
+  "titleProgress": {
+    "message": "Prevajanje… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Prevedeno: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Napaka pri prevajanju: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Jezik strani je že $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Ni najdenega besedila za prevajanje"
+  },
+  "statusError": {
+    "message": "Napaka: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Stran je že v izbranem jeziku"
+  },
+  "statusNothing": {
+    "message": "Ni besedila za prevajanje"
+  },
+  "errorUnknown": {
+    "message": "neznana"
+  },
+  "errNoTab": {
+    "message": "Ni dejavnega zavihka"
+  },
+  "errRefresh": {
+    "message": "Skript vsebine ni na voljo — osvežite stran"
+  },
+  "errNoResponse": {
+    "message": "Ni odgovora od storitve za prevajanje"
+  },
+  "errIncomplete": {
+    "message": "Storitev je vrnila nepopoln rezultat"
+  },
+  "errBadResponse": {
+    "message": "Neveljaven odgovor od storitve za prevajanje"
+  },
+  "pillProgress": {
+    "message": "Prevajanje… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Izvirnik je obnovljen"
+  },
+  "popupSearch": {
+    "message": "Iskanje"
+  }
+}

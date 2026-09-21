@@ -23,8 +23,9 @@ An always-visible translate button in the Firefox address bar. Pick the target l
 | green | translated (click to restore) |
 | red | translation error |
 
-- **Localized UI** — the popup, tooltip and in-page messages follow your Firefox interface language: English, Russian, Ukrainian, German, French, Spanish, Italian, Portuguese, Polish, Turkish, Chinese (Simplified), Japanese, Korean, Arabic, Hindi, Indonesian, Vietnamese, Thai, Dutch, Czech, Swedish, Greek, Hebrew, Persian. English is the fallback; right-to-left layout is used for Arabic, Hebrew and Persian.
+- **Localized UI** — the popup, tooltip and in-page messages follow your Firefox interface language: 93 locales covering every Firefox interface language except a handful with no reliable translation (English fallback there). Right-to-left layout is used for Arabic, Hebrew and Persian.
 - The **default target language** matches your browser language until you pick one.
+- **188 target languages** — everything Google Translate supports, with in-popup search. Русский и English — первые в списке, далее по популярности.
 
 ## Install
 
@@ -82,10 +83,10 @@ Releases are signed by Mozilla on the AMO unlisted/listed channels and mirrored 
 
 - Иконка появляется на каждой `http`/`https`-странице;
 - Перевод всей страницы на месте, включая динамически добавленный текст;
-- Выбор целевого языка (24 языка), выбор запоминается;
+- **188 целевых языков** (всё, что поддерживает Google Переводчик) с поиском по списку; Русский и English — первые, далее по популярности;
 - Возврат оригинала одним кликом (зелёная иконка или кнопка попапа);
 - Состояния иконки: синяя — готова, мигающая жёлтая — перевод, зелёная — переведено (клик — вернуть), красная — ошибка;
-- Интерфейс попапа, подсказки и сообщения на странице — на языке интерфейса Firefox (24 языка, английский как запасной; RTL для арабского, иврита и персидского);
+- Интерфейс попапа, подсказки и сообщения на странице — на языке интерфейса Firefox (93 локали — фактически все языки Firefox; английский как запасной; RTL для арабского, иврита и персидского);
 - Целевой язык по умолчанию соответствует языку браузера.
 
 ### Установка

@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Side oersette"
+  },
+  "popupTitle": {
+    "message": "Side oersette"
+  },
+  "popupHint": {
+    "message": "Kies in taal en klik op “Oersette”"
+  },
+  "btnTranslate": {
+    "message": "Oersette"
+  },
+  "btnTranslating": {
+    "message": "Oan it oersetten…"
+  },
+  "btnShowOriginal": {
+    "message": "Orizjineel toane"
+  },
+  "titleProgress": {
+    "message": "Oan it oersetten… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Oerset: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Fout by it oersetten: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Side is al yn it $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Gjin tekst fûn om oer te setten"
+  },
+  "statusError": {
+    "message": "Flater: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Side is al yn de selektearre taal"
+  },
+  "statusNothing": {
+    "message": "Gjin tekst om oer te setten"
+  },
+  "errorUnknown": {
+    "message": "ûnbekend"
+  },
+  "errNoTab": {
+    "message": "Gjin aktive ljepper"
+  },
+  "errRefresh": {
+    "message": "Ynhâldskript net beskikber — ferfarskje de side"
+  },
+  "errNoResponse": {
+    "message": "Gjin antwurd fan 'e oersettingstsjinst"
+  },
+  "errIncomplete": {
+    "message": "De tsjinst joech in ûnfolslein resultaat werom"
+  },
+  "errBadResponse": {
+    "message": "Unjildich antwurd fan 'e oersettingstsjinst"
+  },
+  "pillProgress": {
+    "message": "Oan it oersetten… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Orizjineel weromset"
+  },
+  "popupSearch": {
+    "message": "Sykje"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "পৃষ্ঠা অনুবাদ করুন"
+  },
+  "popupTitle": {
+    "message": "পৃষ্ঠা অনুবাদ করুন"
+  },
+  "popupHint": {
+    "message": "একটি ভাষা বেছে নিন এবং “অনুবাদ করুন” ক্লিক করুন"
+  },
+  "btnTranslate": {
+    "message": "অনুবাদ করুন"
+  },
+  "btnTranslating": {
+    "message": "অনুবাদ হচ্ছে…"
+  },
+  "btnShowOriginal": {
+    "message": "মূল দেখান"
+  },
+  "titleProgress": {
+    "message": "অনুবাদ হচ্ছে… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "অনুবাদিত: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "অনুবাদ ত্রুটি: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "পৃষ্ঠাটি ইতিমধ্যে $LANG$ ভাষায় আছে",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "অনুবাদ করার মতো কোনো লেখা পাওয়া যায়নি"
+  },
+  "statusError": {
+    "message": "ত্রুটি: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "পৃষ্ঠাটি ইতিমধ্যে নির্বাচিত ভাষায় আছে"
+  },
+  "statusNothing": {
+    "message": "অনুবাদ করার মতো কোনো লেখা নেই"
+  },
+  "errorUnknown": {
+    "message": "অজানা"
+  },
+  "errNoTab": {
+    "message": "কোনো সক্রিয় ট্যাব নেই"
+  },
+  "errRefresh": {
+    "message": "কনটেন্ট স্ক্রিপ্ট অনুপলব্ধ — পৃষ্ঠাটি রিফ্রেশ করুন"
+  },
+  "errNoResponse": {
+    "message": "অনুবাদ সেবা থেকে কোনো সাড়া পাওয়া যায়নি"
+  },
+  "errIncomplete": {
+    "message": "সেবাটি অসম্পূর্ণ ফলাফল দিয়েছে"
+  },
+  "errBadResponse": {
+    "message": "অনুবাদ সেবা থেকে অবৈধ সাড়া"
+  },
+  "pillProgress": {
+    "message": "অনুবাদ হচ্ছে… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "মূল পুনরুদ্ধার করা হয়েছে"
+  },
+  "popupSearch": {
+    "message": "খুঁজুন"
+  }
+}

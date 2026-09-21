@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "已恢复原文"
+  },
+  "popupSearch": {
+    "message": "搜索"
   }
 }

@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "Original restauré"
+  },
+  "popupSearch": {
+    "message": "Rechercher"
   }
 }

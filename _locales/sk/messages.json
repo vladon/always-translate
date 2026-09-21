@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Preložiť stránku"
+  },
+  "popupTitle": {
+    "message": "Preložiť stránku"
+  },
+  "popupHint": {
+    "message": "Vyberte jazyk a kliknite na „Preložiť“"
+  },
+  "btnTranslate": {
+    "message": "Preložiť"
+  },
+  "btnTranslating": {
+    "message": "Prekladá sa…"
+  },
+  "btnShowOriginal": {
+    "message": "Zobraziť originál"
+  },
+  "titleProgress": {
+    "message": "Prekladá sa… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Preložené: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Chyba prekladu: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Jazyk stránky už je $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Nenašiel sa žiadny text na preklad"
+  },
+  "statusError": {
+    "message": "Chyba: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Stránka už je vo vybranom jazyku"
+  },
+  "statusNothing": {
+    "message": "Nie je žiadny text na preklad"
+  },
+  "errorUnknown": {
+    "message": "neznáma"
+  },
+  "errNoTab": {
+    "message": "Nie je aktívna karta"
+  },
+  "errRefresh": {
+    "message": "Skript obsahu nie je dostupný — obnovte stránku"
+  },
+  "errNoResponse": {
+    "message": "Žiadna odpoveď od služby prekladu"
+  },
+  "errIncomplete": {
+    "message": "Služba vrátila neúplný výsledok"
+  },
+  "errBadResponse": {
+    "message": "Neplatná odpoveď od služby prekladu"
+  },
+  "pillProgress": {
+    "message": "Prekladá sa… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Originál bol obnovený"
+  },
+  "popupSearch": {
+    "message": "Hľadať"
+  }
+}

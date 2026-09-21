@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Traduki paĝon"
+  },
+  "popupTitle": {
+    "message": "Traduki paĝon"
+  },
+  "popupHint": {
+    "message": "Elektu lingvon kaj alklaku «Traduki»"
+  },
+  "btnTranslate": {
+    "message": "Traduki"
+  },
+  "btnTranslating": {
+    "message": "Tradukado…"
+  },
+  "btnShowOriginal": {
+    "message": "Montri la originalon"
+  },
+  "titleProgress": {
+    "message": "Tradukado… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Tradukita: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Tradukeraro: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "La paĝo jam estas en $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Neniu teksto trovita por traduki"
+  },
+  "statusError": {
+    "message": "Eraro: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "La paĝo jam estas en la elektita lingvo"
+  },
+  "statusNothing": {
+    "message": "Neniu teksto por traduki"
+  },
+  "errorUnknown": {
+    "message": "nekonata"
+  },
+  "errNoTab": {
+    "message": "Neniu aktiva langeto"
+  },
+  "errRefresh": {
+    "message": "Enhavoskripto nedisponebla — reŝargu la paĝon"
+  },
+  "errNoResponse": {
+    "message": "Neniu respondo de la tradukservo"
+  },
+  "errIncomplete": {
+    "message": "La servo liveris nekompletan rezulton"
+  },
+  "errBadResponse": {
+    "message": "Nevalida respondo de la tradukservo"
+  },
+  "pillProgress": {
+    "message": "Tradukado… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Originalo restaŭrita"
+  },
+  "popupSearch": {
+    "message": "Serĉi"
+  }
+}

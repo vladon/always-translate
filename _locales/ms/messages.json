@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Terjemah halaman"
+  },
+  "popupTitle": {
+    "message": "Terjemah halaman"
+  },
+  "popupHint": {
+    "message": "Pilih bahasa dan klik “Terjemah”"
+  },
+  "btnTranslate": {
+    "message": "Terjemah"
+  },
+  "btnTranslating": {
+    "message": "Menterjemah…"
+  },
+  "btnShowOriginal": {
+    "message": "Tunjuk yang asal"
+  },
+  "titleProgress": {
+    "message": "Menterjemah… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Diterjemah: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Ralat terjemahan: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Halaman sudah dalam bahasa $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Tiada teks ditemui untuk diterjemah"
+  },
+  "statusError": {
+    "message": "Ralat: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Halaman sudah dalam bahasa yang dipilih"
+  },
+  "statusNothing": {
+    "message": "Tiada teks untuk diterjemah"
+  },
+  "errorUnknown": {
+    "message": "tidak diketahui"
+  },
+  "errNoTab": {
+    "message": "Tiada tab aktif"
+  },
+  "errRefresh": {
+    "message": "Skrip kandungan tidak tersedia — muat semula halaman"
+  },
+  "errNoResponse": {
+    "message": "Tiada respons daripada perkhidmatan terjemahan"
+  },
+  "errIncomplete": {
+    "message": "Perkhidmatan memulangkan hasil yang tidak lengkap"
+  },
+  "errBadResponse": {
+    "message": "Respons tidak sah daripada perkhidmatan terjemahan"
+  },
+  "pillProgress": {
+    "message": "Menterjemah… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Yang asal dipulihkan"
+  },
+  "popupSearch": {
+    "message": "Cari"
+  }
+}

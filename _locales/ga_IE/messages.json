@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Aistrigh an leathanach"
+  },
+  "popupTitle": {
+    "message": "Aistrigh an leathanach"
+  },
+  "popupHint": {
+    "message": "Roghnaigh teanga agus cliceáil “Aistrigh”"
+  },
+  "btnTranslate": {
+    "message": "Aistrigh"
+  },
+  "btnTranslating": {
+    "message": "Á aistriú…"
+  },
+  "btnShowOriginal": {
+    "message": "Taispeáin an bunleagan"
+  },
+  "titleProgress": {
+    "message": "Á aistriú… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Aistrithe: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Earráid aistriúcháin: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Tá an leathanach i $LANG$ cheana féin",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Ní bhfuarthas aon téacs le haistriú"
+  },
+  "statusError": {
+    "message": "Earráid: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Tá an leathanach sa teanga roghnaithe cheana féin"
+  },
+  "statusNothing": {
+    "message": "Níl aon téacs le haistriú"
+  },
+  "errorUnknown": {
+    "message": "anaithnid"
+  },
+  "errNoTab": {
+    "message": "Níl aon chluaisín gníomhach ann"
+  },
+  "errRefresh": {
+    "message": "Níl an script ábhair ar fáil — athnuaigh an leathanach"
+  },
+  "errNoResponse": {
+    "message": "Níl aon fhreagra ón tseirbhís aistriúcháin"
+  },
+  "errIncomplete": {
+    "message": "D'fhill an tseirbhís ar thoradh neamhiomlán"
+  },
+  "errBadResponse": {
+    "message": "Freagra neamhbhailí ón tseirbhís aistriúcháin"
+  },
+  "pillProgress": {
+    "message": "Á aistriú… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Cuireadh an bunleagan ar ais"
+  },
+  "popupSearch": {
+    "message": "Cuardach"
+  }
+}

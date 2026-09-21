@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Преведи ја страницата"
+  },
+  "popupTitle": {
+    "message": "Преведи ја страницата"
+  },
+  "popupHint": {
+    "message": "Изберете јазик и кликнете на „Преведи“"
+  },
+  "btnTranslate": {
+    "message": "Преведи"
+  },
+  "btnTranslating": {
+    "message": "Преведување…"
+  },
+  "btnShowOriginal": {
+    "message": "Прикажи оригинал"
+  },
+  "titleProgress": {
+    "message": "Преведување… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Преведено: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Грешка при преведување: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Јазикот на страницата е веќе $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Не е пронајден текст за преведување"
+  },
+  "statusError": {
+    "message": "Грешка: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Страницата е веќе на избраниот јазик"
+  },
+  "statusNothing": {
+    "message": "Нема текст за преведување"
+  },
+  "errorUnknown": {
+    "message": "непозната"
+  },
+  "errNoTab": {
+    "message": "Нема активно јазиче"
+  },
+  "errRefresh": {
+    "message": "Скриптата за содржина е недостапна — освежете ја страницата"
+  },
+  "errNoResponse": {
+    "message": "Нема одговор од услугата за преведување"
+  },
+  "errIncomplete": {
+    "message": "Услугата врати неполн резултат"
+  },
+  "errBadResponse": {
+    "message": "Невалиден одговор од услугата за преведување"
+  },
+  "pillProgress": {
+    "message": "Преведување… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Оригиналот е вратен"
+  },
+  "popupSearch": {
+    "message": "Пребарување"
+  }
+}

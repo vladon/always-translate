@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Gunj dugûj na'a gūnaj"
+  },
+  "popupTitle": {
+    "message": "Gunj dugûj na'a gūnaj"
+  },
+  "popupHint": {
+    "message": "Nāgā'ā doj nadū nā'nīï nej “Gunj dugûj”"
+  },
+  "btnTranslate": {
+    "message": "Gunj dugûj"
+  },
+  "btnTranslating": {
+    "message": "Dugûj na'anj…"
+  },
+  "btnShowOriginal": {
+    "message": "Nadū na'anïnj ā'nï'"
+  },
+  "titleProgress": {
+    "message": "Dugûj na'anj… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Gūnaj dugû: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Yā'nï'nïj gunj dugûj: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Ya' gūnaj nanē' āga'hïn $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Sisi na'ānï ni'nïj nej dugûj gūnaj"
+  },
+  "statusError": {
+    "message": "Yā' nï'nïnïj: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Ya' gūnaj nanē' nadū dāj gūnï"
+  },
+  "statusNothing": {
+    "message": "Sisi na'ānï gūnaj"
+  },
+  "errorUnknown": {
+    "message": "si nūj nù"
+  },
+  "errNoTab": {
+    "message": "Sisi si gūtā' ni'aāj"
+  },
+  "errRefresh": {
+    "message": "Si nuguà'n à'ngō nakāj dugûj — nāgā'ā dugûj nanï"
+  },
+  "errNoResponse": {
+    "message": "Si nāgā'ā dugûj nadū dāj nigā'nj"
+  },
+  "errIncomplete": {
+    "message": "Nadū dāj nuguan' anē' ni'ñanj"
+  },
+  "errBadResponse": {
+    "message": "Dugûj nadū dāj nuguan' si nuguà'n"
+  },
+  "pillProgress": {
+    "message": "Dugûj na'anj… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Nāgā'ā nadū na'anïnj"
+  },
+  "popupSearch": {
+    "message": "Buscar"
+  }
+}

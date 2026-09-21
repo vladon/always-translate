@@ -11,10 +11,23 @@
       font: 13px/1.4 system-ui, sans-serif;
     }
     h1 { font-size: 13px; font-weight: 600; margin: 0 0 8px; }
+    #search {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px 8px;
+      margin: 0 0 8px;
+      font: 12.5px system-ui, sans-serif;
+      border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+      border-radius: 6px;
+      background: transparent;
+      color: inherit;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 5px;
+      max-height: 190px;
+      overflow-y: auto;
     }
     button.chip {
       padding: 5px 2px;
@@ -56,9 +69,11 @@
 </head>
 <body>
   <h1 id="title"></h1>
+  <input id="search" type="search" autocomplete="off">
   <div class="grid" id="langs"></div>
   <div id="status"></div>
   <button id="action"></button>
+  <script src="langs.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

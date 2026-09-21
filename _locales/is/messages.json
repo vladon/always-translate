@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Þýða síðu"
+  },
+  "popupTitle": {
+    "message": "Þýða síðu"
+  },
+  "popupHint": {
+    "message": "Veldu tungumál og smelltu á „Þýða“"
+  },
+  "btnTranslate": {
+    "message": "Þýða"
+  },
+  "btnTranslating": {
+    "message": "Þýði…"
+  },
+  "btnShowOriginal": {
+    "message": "Sýna frumtexta"
+  },
+  "titleProgress": {
+    "message": "Þýði… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Þýtt: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Villa við þýðingu: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Síðan er þegar á $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Enginn texti fannst til þýðingar"
+  },
+  "statusError": {
+    "message": "Villa: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Síðan er þegar á völdu tungumáli"
+  },
+  "statusNothing": {
+    "message": "Enginn texti til þýðingar"
+  },
+  "errorUnknown": {
+    "message": "óþekkt"
+  },
+  "errNoTab": {
+    "message": "Enginn virkur flipi"
+  },
+  "errRefresh": {
+    "message": "Innihaldsskriftan er ekki tiltæk — endurhladdu síðuna"
+  },
+  "errNoResponse": {
+    "message": "Ekkert svar frá þýðingarþjónustunni"
+  },
+  "errIncomplete": {
+    "message": "Þjónustan skilaði ófullkominni niðurstöðu"
+  },
+  "errBadResponse": {
+    "message": "Ógilt svar frá þýðingarþjónustunni"
+  },
+  "pillProgress": {
+    "message": "Þýði… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Frumtexti endurheimtur"
+  },
+  "popupSearch": {
+    "message": "Leita"
+  }
+}

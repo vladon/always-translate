@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "පිටුව පරිවර්තනය කරන්න"
+  },
+  "popupTitle": {
+    "message": "පිටුව පරිවර්තනය කරන්න"
+  },
+  "popupHint": {
+    "message": "භාෂාවක් තෝරාගෙන “පරිවර්තනය කරන්න” ක්ලික් කරන්න"
+  },
+  "btnTranslate": {
+    "message": "පරිවර්තනය කරන්න"
+  },
+  "btnTranslating": {
+    "message": "පරිවර්තනය කරමින්…"
+  },
+  "btnShowOriginal": {
+    "message": "මුල් පිටපත පෙන්වන්න"
+  },
+  "titleProgress": {
+    "message": "පරිවර්තනය කරමින්… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "පරිවර්තිතයි: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "පරිවර්තන දෝෂයකි: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "පිටුව දැනටමත් $LANG$ භාෂාවෙන් වේ",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "පරිවර්තනය කිරීමට පෙළක් හමු නොවුණි"
+  },
+  "statusError": {
+    "message": "දෝෂයකි: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "පිටුව දැනටමත් තෝරාගත් භාෂාවෙන් වේ"
+  },
+  "statusNothing": {
+    "message": "පරිවර්තනය කිරීමට පෙළක් නැත"
+  },
+  "errorUnknown": {
+    "message": "නොදන්නා"
+  },
+  "errNoTab": {
+    "message": "ක්‍රියාකාරී ටැබක් නැත"
+  },
+  "errRefresh": {
+    "message": "අන්තර්ගත ස්ක්‍රිප්තුව ලබාගත නොහැක — පිටුව නැවුම් කරන්න"
+  },
+  "errNoResponse": {
+    "message": "පරිවර්තන සේවාවෙන් පිළිතුරක් නැත"
+  },
+  "errIncomplete": {
+    "message": "සේවාව අසම්පූර්ණ ප්‍රතිඵලයක් ලබා දුන්නා"
+  },
+  "errBadResponse": {
+    "message": "පරිවර්තන සේවාවෙන් වලංගු නොවන පිළිතුරක්"
+  },
+  "pillProgress": {
+    "message": "පරිවර්තනය කරමින්… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "මුල් පිටපත ප්‍රතිසාධනය කරන ලදී"
+  },
+  "popupSearch": {
+    "message": "සොයන්න"
+  }
+}

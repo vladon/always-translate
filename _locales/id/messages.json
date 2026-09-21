@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "Teks asli dipulihkan"
+  },
+  "popupSearch": {
+    "message": "Cari"
   }
 }

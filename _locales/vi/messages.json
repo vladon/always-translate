@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "Đã khôi phục bản gốc"
+  },
+  "popupSearch": {
+    "message": "Tìm kiếm"
   }
 }

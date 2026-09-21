@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Bok přełožiś"
+  },
+  "popupTitle": {
+    "message": "Bok přełožiś"
+  },
+  "popupHint": {
+    "message": "Wubjeŕśo rěc a klikniśo na „Přełožiś“"
+  },
+  "btnTranslate": {
+    "message": "Přełožiś"
+  },
+  "btnTranslating": {
+    "message": "Přełožowanje…"
+  },
+  "btnShowOriginal": {
+    "message": "Original pokazaś"
+  },
+  "titleProgress": {
+    "message": "Přełožowanje… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Přełožone: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Zmólka při přełožowanju: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Rěc boka jo južo $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Žedyn tekst za přełožowanje njejo se nasoł"
+  },
+  "statusError": {
+    "message": "Zmólka: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Bok jo južo w wubranej rěcy"
+  },
+  "statusNothing": {
+    "message": "Njejo žedyn tekst za přełožowanje"
+  },
+  "errorUnknown": {
+    "message": "njewěsta"
+  },
+  "errNoTab": {
+    "message": "Njejo žeden aktiwny rejtark"
+  },
+  "errRefresh": {
+    "message": "Wopśimjejski skript njejo dostępny — aktualizěrujśo bok"
+  },
+  "errNoResponse": {
+    "message": "Njejo wótpowěd wót słužby za přełožowanje"
+  },
+  "errIncomplete": {
+    "message": "Słužba jo wróśiła njepołny wuslědk"
+  },
+  "errBadResponse": {
+    "message": "Njekorektny wótpowěd wót słužby za přełožowanje"
+  },
+  "pillProgress": {
+    "message": "Přełožowanje… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Original jo wótnowiony"
+  },
+  "popupSearch": {
+    "message": "Pytaś"
+  }
+}

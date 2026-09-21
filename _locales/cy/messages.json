@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Cyfieithu'r dudalen"
+  },
+  "popupTitle": {
+    "message": "Cyfieithu'r dudalen"
+  },
+  "popupHint": {
+    "message": "Dewiswch iaith a chliciwch “Cyfieithu”"
+  },
+  "btnTranslate": {
+    "message": "Cyfieithu"
+  },
+  "btnTranslating": {
+    "message": "Yn cyfieithu…"
+  },
+  "btnShowOriginal": {
+    "message": "Dangos y gwreiddiol"
+  },
+  "titleProgress": {
+    "message": "Yn cyfieithu… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Wedi cyfieithu: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Gwall cyfieithu: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Mae'r dudalen eisoes yn $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Heb ganfod testun i'w gyfieithu"
+  },
+  "statusError": {
+    "message": "Gwall: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Mae'r dudalen eisoes yn yr iaith ddewisedig"
+  },
+  "statusNothing": {
+    "message": "Does dim testun i'w gyfieithu"
+  },
+  "errorUnknown": {
+    "message": "anhysbys"
+  },
+  "errNoTab": {
+    "message": "Dim tab gweithredol"
+  },
+  "errRefresh": {
+    "message": "Sgript cynnwys ddim ar gael — adnewyddwch y dudalen"
+  },
+  "errNoResponse": {
+    "message": "Dim ymateb gan y gwasanaeth cyfieithu"
+  },
+  "errIncomplete": {
+    "message": "Dychwelodd y gwasanaeth ganlyniad anghyflawn"
+  },
+  "errBadResponse": {
+    "message": "Ymateb annilys gan y gwasanaeth cyfieithu"
+  },
+  "pillProgress": {
+    "message": "Yn cyfieithu… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Adferwyd y gwreiddiol"
+  },
+  "popupSearch": {
+    "message": "Chwilio"
+  }
+}

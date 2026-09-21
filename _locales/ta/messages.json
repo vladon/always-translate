@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "பக்கத்தை மொழிபெயர்"
+  },
+  "popupTitle": {
+    "message": "பக்கத்தை மொழிபெயர்"
+  },
+  "popupHint": {
+    "message": "மொழியைத் தேர்ந்தெடுத்து “மொழிபெயர்” கிளிக் செய்யவும்"
+  },
+  "btnTranslate": {
+    "message": "மொழிபெயர்"
+  },
+  "btnTranslating": {
+    "message": "மொழிபெயர்க்கிறது…"
+  },
+  "btnShowOriginal": {
+    "message": "அசலைக் காட்டு"
+  },
+  "titleProgress": {
+    "message": "மொழிபெயர்க்கிறது… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "மொழிபெயர்க்கப்பட்டது: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "மொழிபெயர்ப்புப் பிழை: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "பக்கம் ஏற்கனவே $LANG$ மொழியில் உள்ளது",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "மொழிபெயர்க்க உரை எதுவும் கிடைக்கவில்லை"
+  },
+  "statusError": {
+    "message": "பிழை: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "பக்கம் ஏற்கனவே தேர்ந்தெடுத்த மொழியில் உள்ளது"
+  },
+  "statusNothing": {
+    "message": "மொழிபெயர்க்க உரை இல்லை"
+  },
+  "errorUnknown": {
+    "message": "தெரியாத"
+  },
+  "errNoTab": {
+    "message": "செயலில் உள்ள கீற்று இல்லை"
+  },
+  "errRefresh": {
+    "message": "உள்ளடக்க ச்கிரிப்ட் கிடைக்கவில்லை — பக்கத்தைப் புதுப்பிக்கவும்"
+  },
+  "errNoResponse": {
+    "message": "மொழிபெயர்ப்புச் சேவையிடமிருந்து பதில் இல்லை"
+  },
+  "errIncomplete": {
+    "message": "சேவை முழுமையற்ற முடிவைத் திருப்பியனுப்பியது"
+  },
+  "errBadResponse": {
+    "message": "மொழிபெயர்ப்புச் சேவையிடமிருந்து தவறான பதில்"
+  },
+  "pillProgress": {
+    "message": "மொழிபெயர்க்கிறது… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "அசல் மீட்டமைக்கப்பட்டது"
+  },
+  "popupSearch": {
+    "message": "தேடு"
+  }
+}

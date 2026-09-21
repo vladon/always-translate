@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "पृष्ठाचे भाषांतर करा"
+  },
+  "popupTitle": {
+    "message": "पृष्ठाचे भाषांतर करा"
+  },
+  "popupHint": {
+    "message": "भाषा निवडा आणि “भाषांतर करा” वर क्लिक करा"
+  },
+  "btnTranslate": {
+    "message": "भाषांतर करा"
+  },
+  "btnTranslating": {
+    "message": "भाषांतर सुरू आहे…"
+  },
+  "btnShowOriginal": {
+    "message": "मूळ दाखवा"
+  },
+  "titleProgress": {
+    "message": "भाषांतर सुरू आहे… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "भाषांतरित: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "भाषांतर त्रुटी: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "पृष्ठ आधीच $LANG$ भाषेत आहे",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "भाषांतरासाठी मजकूर आढळला नाही"
+  },
+  "statusError": {
+    "message": "त्रुटी: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "पृष्ठ आधीच निवडलेल्या भाषेत आहे"
+  },
+  "statusNothing": {
+    "message": "भाषांतरासाठी मजकूर नाही"
+  },
+  "errorUnknown": {
+    "message": "अज्ञात"
+  },
+  "errNoTab": {
+    "message": "सक्रिय टॅब नाही"
+  },
+  "errRefresh": {
+    "message": "सामग्री स्क्रिप्ट अनुपलब्ध आहे — पृष्ठ रीफ्रेश करा"
+  },
+  "errNoResponse": {
+    "message": "भाषांतर सेवेकडून प्रतिसाद नाही"
+  },
+  "errIncomplete": {
+    "message": "सेवेने अपूर्ण निकाल परत केला"
+  },
+  "errBadResponse": {
+    "message": "भाषांतर सेवेकडून अवैध प्रतिसाद"
+  },
+  "pillProgress": {
+    "message": "भाषांतर सुरू आहे… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "मूळ पुनर्संचयित झाले"
+  },
+  "popupSearch": {
+    "message": "शोधा"
+  }
+}

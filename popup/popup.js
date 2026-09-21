@@ -5,16 +5,8 @@ const API = typeof browser !== "undefined" ? browser : chrome;
 // Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.
 const msg = (key, args) => API.i18n.getMessage(key, args) || key;
 
-const LANGS = [
-  ["ru", "Русский"], ["en", "English"], ["uk", "Українська"],
-  ["de", "Deutsch"], ["fr", "Français"], ["es", "Español"],
-  ["it", "Italiano"], ["pt", "Português"], ["pl", "Polski"],
-  ["tr", "Türkçe"], ["zh-CN", "中文"], ["ja", "日本語"],
-  ["ko", "한국어"], ["ar", "العربية"], ["hi", "हिन्दी"],
-  ["id", "Indonesia"], ["vi", "Tiếng Việt"], ["th", "ไทย"],
-  ["nl", "Nederlands"], ["cs", "Čeština"], ["sv", "Svenska"],
-  ["el", "Ελληνικά"], ["he", "עברית"], ["fa", "فارسی"],
-];
+// Target languages come from langs.js (TARGET_LANGS: [code, nativeName, englishName]),
+// mirroring the Google Translate service the extension uses.
 
 let selected = null;
 let state = { kind: "idle" };
@@ -90,14 +82,19 @@ function render() {
   }
 }
 
-function buildLangs() {
+function buildLangs(filter) {
   const grid = document.getElementById("langs");
-  for (const [code, label] of LANGS) {
+  grid.textContent = "";
+  const q = (filter || "").trim().toLowerCase();
+  for (const [code, native, english] of TARGET_LANGS) {
+    if (q && !native.toLowerCase().includes(q) && !english.toLowerCase().includes(q) && !code.toLowerCase().startsWith(q)) {
+      continue;
+    }
     const btn = document.createElement("button");
     btn.className = "chip";
     btn.dataset.lang = code;
-    btn.textContent = label;
-    btn.title = code;
+    btn.textContent = native;
+    btn.title = english + " (" + code + ")";
     btn.addEventListener("click", () => {
       selected = code;
       API.storage.local.set({ targetLang: code }).catch(() => {});
@@ -116,6 +113,10 @@ function buildLangs() {
   document.getElementById("title").textContent = msg("popupTitle");
   document.title = msg("popupTitle");
   document.getElementById("action").textContent = msg("btnTranslate");
+
+  const searchEl = document.getElementById("search");
+  searchEl.placeholder = msg("popupSearch");
+  searchEl.addEventListener("input", () => buildLangs(searchEl.value));
 
   buildLangs();
 

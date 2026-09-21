@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "המקור שוחזר"
+  },
+  "popupSearch": {
+    "message": "חיפוש"
   }
 }

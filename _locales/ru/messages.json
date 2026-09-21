@@ -3,7 +3,7 @@
     "message": "Always Translate"
   },
   "extDescription": {
-    "message": "Всегда видимая кнопка перевода в адресной строке. Выберите целевой язык один раз, переводите страницу в один клик (через Google Переводчик), ещё один клик возвращает оригинал."
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
   },
   "defaultTitle": {
     "message": "Перевести страницу"
@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "Возвращён оригинал"
+  },
+  "popupSearch": {
+    "message": "Поиск"
   }
 }

@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰੋ"
+  },
+  "popupTitle": {
+    "message": "ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰੋ"
+  },
+  "popupHint": {
+    "message": "ਭਾਸ਼ਾ ਚੁਣੋ ਅਤੇ “ਅਨੁਵਾਦ ਕਰੋ” ’ਤੇ ਕਲਿੱਕ ਕਰੋ"
+  },
+  "btnTranslate": {
+    "message": "ਅਨੁਵਾਦ ਕਰੋ"
+  },
+  "btnTranslating": {
+    "message": "ਅਨੁਵਾਦ ਹੋ ਰਿਹਾ ਹੈ…"
+  },
+  "btnShowOriginal": {
+    "message": "ਅਸਲ ਵਿਖਾਓ"
+  },
+  "titleProgress": {
+    "message": "ਅਨੁਵਾਦ ਹੋ ਰਿਹਾ ਹੈ… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "ਅਨੁਵਾਦ ਕੀਤਾ: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "ਅਨੁਵਾਦ ਗਲਤੀ: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "ਸਫ਼ਾ ਪਹਿਲਾਂ ਹੀ $LANG$ ਭਾਸ਼ਾ ਵਿੱਚ ਹੈ",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਕੋਈ ਲਿਖਤ ਨਹੀਂ ਮਿਲੀ"
+  },
+  "statusError": {
+    "message": "ਗਲਤੀ: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "ਸਫ਼ਾ ਪਹਿਲਾਂ ਹੀ ਚੁਣੀ ਭਾਸ਼ਾ ਵਿੱਚ ਹੈ"
+  },
+  "statusNothing": {
+    "message": "ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਕੋਈ ਲਿਖਤ ਨਹੀਂ"
+  },
+  "errorUnknown": {
+    "message": "ਅਣਜਾਣ"
+  },
+  "errNoTab": {
+    "message": "ਕੋਈ ਸਰਗਰਮ ਟੈਬ ਨਹੀਂ"
+  },
+  "errRefresh": {
+    "message": "ਸਮੱਗਰੀ ਸਕ੍ਰਿਪਟ ਉਪਲਬਧ ਨਹੀਂ — ਸਫ਼ਾ ਤਾਜ਼ਾ ਕਰੋ"
+  },
+  "errNoResponse": {
+    "message": "ਅਨੁਵਾਦ ਸੇਵਾ ਤੋਂ ਕੋਈ ਜਵਾਬ ਨਹੀਂ"
+  },
+  "errIncomplete": {
+    "message": "ਸੇਵਾ ਨੇ ਅਧੂਰਾ ਨਤੀਜਾ ਦਿੱਤਾ"
+  },
+  "errBadResponse": {
+    "message": "ਅਨੁਵਾਦ ਸੇਵਾ ਤੋਂ ਗਲਤ ਜਵਾਬ"
+  },
+  "pillProgress": {
+    "message": "ਅਨੁਵਾਦ ਹੋ ਰਿਹਾ ਹੈ… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "ਅਸਲ ਬਹਾਲ ਕੀਤਾ ਗਿਆ"
+  },
+  "popupSearch": {
+    "message": "ਖੋਜੋ"
+  }
+}

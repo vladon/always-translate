@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Traducir a pachina"
+  },
+  "popupTitle": {
+    "message": "Traducir a pachina"
+  },
+  "popupHint": {
+    "message": "Tría una luenga y preta «Traducir»"
+  },
+  "btnTranslate": {
+    "message": "Traducir"
+  },
+  "btnTranslating": {
+    "message": "Traducindo…"
+  },
+  "btnShowOriginal": {
+    "message": "Amostrar l'orichinal"
+  },
+  "titleProgress": {
+    "message": "Traducindo… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Traduciu: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Error de traducción: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "A pachina ya ye en $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "No s'ha trobau texto a traducir"
+  },
+  "statusError": {
+    "message": "Error: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "A pachina ya ye en a luenga triada"
+  },
+  "statusNothing": {
+    "message": "No i ha texto a traducir"
+  },
+  "errorUnknown": {
+    "message": "desconoixiu"
+  },
+  "errNoTab": {
+    "message": "No i ha pestaña activa"
+  },
+  "errRefresh": {
+    "message": "Script de conteniu no disponible — recarga a pachina"
+  },
+  "errNoResponse": {
+    "message": "No i ha respuesta d'o servicio de traducción"
+  },
+  "errIncomplete": {
+    "message": "O servicio ha tornau un resultau incompleto"
+  },
+  "errBadResponse": {
+    "message": "Respuesta no valida d'o servicio de traducción"
+  },
+  "pillProgress": {
+    "message": "Traducindo… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Orichinal restaurau"
+  },
+  "popupSearch": {
+    "message": "Buscar"
+  }
+}

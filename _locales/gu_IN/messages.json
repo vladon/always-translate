@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "પૃષ્ઠનો અનુવાદ કરો"
+  },
+  "popupTitle": {
+    "message": "પૃષ્ઠનો અનુવાદ કરો"
+  },
+  "popupHint": {
+    "message": "ભાષા પસંદ કરો અને “અનુવાદ કરો” પર ક્લિક કરો"
+  },
+  "btnTranslate": {
+    "message": "અનુવાદ કરો"
+  },
+  "btnTranslating": {
+    "message": "અનુવાદ થાય છે…"
+  },
+  "btnShowOriginal": {
+    "message": "મૂળ બતાવો"
+  },
+  "titleProgress": {
+    "message": "અનુવાદ થાય છે… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "અનુવાદિત: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "અનુવાદ ભૂલ: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "પૃષ્ઠ પહેલેથી $LANG$ ભાષામાં છે",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "અનુવાદ કરવા માટે કોઈ લખાણ મળ્યું નથી"
+  },
+  "statusError": {
+    "message": "ભૂલ: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "પૃષ્ઠ પહેલેથી પસંદ કરેલી ભાષામાં છે"
+  },
+  "statusNothing": {
+    "message": "અનુવાદ કરવા માટે કોઈ લખાણ નથી"
+  },
+  "errorUnknown": {
+    "message": "અજાણ્યું"
+  },
+  "errNoTab": {
+    "message": "કોઈ સક્રિય ટૅબ નથી"
+  },
+  "errRefresh": {
+    "message": "કન્ટેન્ટ સ્ક્રિપ્ટ અનુપલબ્ધ છે — પૃષ્ઠ રીફ્રેશ કરો"
+  },
+  "errNoResponse": {
+    "message": "અનુવાદ સેવા તરફથી કોઈ પ્રતિસાદ નથી"
+  },
+  "errIncomplete": {
+    "message": "સેવાએ અપૂર્ણ પરિણામ આપ્યું"
+  },
+  "errBadResponse": {
+    "message": "અનુવાદ સેવા તરફથી અમાન્ય પ્રતિસાદ"
+  },
+  "pillProgress": {
+    "message": "અનુવાદ થાય છે… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "મૂળ પુનઃસ્થાપિત થયું"
+  },
+  "popupSearch": {
+    "message": "શોધો"
+  }
+}

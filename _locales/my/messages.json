@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "စာမျက်နှာကို ဘာသာပြန်ရန်"
+  },
+  "popupTitle": {
+    "message": "စာမျက်နှာကို ဘာသာပြန်ရန်"
+  },
+  "popupHint": {
+    "message": "ဘာသာစကား ရွေးပြီး “ဘာသာပြန်” ကို နှိပ်ပါ"
+  },
+  "btnTranslate": {
+    "message": "ဘာသာပြန်"
+  },
+  "btnTranslating": {
+    "message": "ဘာသာပြန်နေသည်…"
+  },
+  "btnShowOriginal": {
+    "message": "မူရင်းကို ပြရန်"
+  },
+  "titleProgress": {
+    "message": "ဘာသာပြန်နေသည်… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "ဘာသာပြန်ပြီး: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "ဘာသာပြန်ခြင်း အမှား: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "ဤစာမျက်နှာသည် $LANG$ ဘာသာဖြင့် ရှိပြီးသားဖြစ်သည်",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "ဘာသာပြန်ရန် စာသား မတွေ့ပါ"
+  },
+  "statusError": {
+    "message": "အမှား: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "ဤစာမျက်နှာသည် ရွေးချယ်ထားသော ဘာသာဖြင့် ရှိပြီးသားဖြစ်သည်"
+  },
+  "statusNothing": {
+    "message": "ဘာသာပြန်ရန် စာသား မရှိပါ"
+  },
+  "errorUnknown": {
+    "message": "အမည်မသိ"
+  },
+  "errNoTab": {
+    "message": "တက်ကြွေသော tab မရှိပါ"
+  },
+  "errRefresh": {
+    "message": "Content script ကို မသုံးနိုင်ပါ — စာမျက်နှာကို ပြန်လန်းပါ"
+  },
+  "errNoResponse": {
+    "message": "ဘာသာပြန်ဝန်ဆောင်မှုမှ တုံ့ပြန်မှု မရှိပါ"
+  },
+  "errIncomplete": {
+    "message": "ဝန်ဆောင်မှုမှ မပြီးစီးသော ရလဒ် ပြန်ပေးခဲ့သည်"
+  },
+  "errBadResponse": {
+    "message": "ဘာသာပြန်ဝန်ဆောင်မှုမှ မမှန်ကန်သော တုံ့ပြန်မှု"
+  },
+  "pillProgress": {
+    "message": "ဘာသာပြန်နေသည်… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "မူရင်းကို ပြန်ရရှိသည်"
+  },
+  "popupSearch": {
+    "message": "ရှာဖွေ"
+  }
+}

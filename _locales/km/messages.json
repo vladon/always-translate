@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "បកប្រែទំព័រ"
+  },
+  "popupTitle": {
+    "message": "បកប្រែទំព័រ"
+  },
+  "popupHint": {
+    "message": "ជ្រើសរើសភាសា រួចចុច “បកប្រែ”"
+  },
+  "btnTranslate": {
+    "message": "បកប្រែ"
+  },
+  "btnTranslating": {
+    "message": "កំពុងបកប្រែ…"
+  },
+  "btnShowOriginal": {
+    "message": "បង្ហាញដើម"
+  },
+  "titleProgress": {
+    "message": "កំពុងបកប្រែ… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "បានបកប្រែ៖ $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "កំហុសបកប្រែ៖ $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "ទំព័រស្ថិតនៅក្នុងភាសា $LANG$ រួចហើយ",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "រកមិនឃើញអត្ថបទសម្រាប់បកប្រែទេ"
+  },
+  "statusError": {
+    "message": "កំហុស៖ $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "ទំព័រស្ថិតនៅក្នុងភាសាដែលបានជ្រើសរើសរួចហើយ"
+  },
+  "statusNothing": {
+    "message": "គ្មានអត្ថបទសម្រាប់បកប្រែទេ"
+  },
+  "errorUnknown": {
+    "message": "មិនស្គាល់"
+  },
+  "errNoTab": {
+    "message": "គ្មានផ្ទាំងសកម្មទេ"
+  },
+  "errRefresh": {
+    "message": "ស្គ្រីបនៃមាតិកាមិនអាចប្រើបានទេ — សូមផ្ទុកទំព័រឡើងវិញ"
+  },
+  "errNoResponse": {
+    "message": "គ្មានការឆ្លើយតបពីសេវាបកប្រែទេ"
+  },
+  "errIncomplete": {
+    "message": "សេវាបានផ្ដល់លទ្ធផលមិនពេញលេញ"
+  },
+  "errBadResponse": {
+    "message": "ការឆ្លើយតបមិនត្រឹមត្រូវពីសេវាបកប្រែ"
+  },
+  "pillProgress": {
+    "message": "កំពុងបកប្រែ… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "បានស្ដារដើមវិញ"
+  },
+  "popupSearch": {
+    "message": "ស្វែងរក"
+  }
+}

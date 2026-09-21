@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Бетті аудару"
+  },
+  "popupTitle": {
+    "message": "Бетті аудару"
+  },
+  "popupHint": {
+    "message": "Тілді таңдап, «Аудару» түймесін басыңыз"
+  },
+  "btnTranslate": {
+    "message": "Аудару"
+  },
+  "btnTranslating": {
+    "message": "Аударылуда…"
+  },
+  "btnShowOriginal": {
+    "message": "Түпнұсқаны көрсету"
+  },
+  "titleProgress": {
+    "message": "Аударылуда… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Аударылды: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Аудару қатесі: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Бет бұрыннан $LANG$ тілінде",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Аударуға мәтін табылмады"
+  },
+  "statusError": {
+    "message": "Қате: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Бет бұрыннан таңдалған тілде"
+  },
+  "statusNothing": {
+    "message": "Аударуға мәтін жоқ"
+  },
+  "errorUnknown": {
+    "message": "белгісіз"
+  },
+  "errNoTab": {
+    "message": "Белсенді қойынды жоқ"
+  },
+  "errRefresh": {
+    "message": "Мазмұн скрипті қолжетімсіз — бетті жаңартыңыз"
+  },
+  "errNoResponse": {
+    "message": "Аудару қызметінен жауап жоқ"
+  },
+  "errIncomplete": {
+    "message": "Қызмет толық емес нәтиже қайтарды"
+  },
+  "errBadResponse": {
+    "message": "Аудару қызметінен жарамсыз жауап"
+  },
+  "pillProgress": {
+    "message": "Аударылуда… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Түпнұсқа қалпына келтірілді"
+  },
+  "popupSearch": {
+    "message": "Іздеу"
+  }
+}

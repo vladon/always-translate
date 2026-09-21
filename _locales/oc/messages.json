@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Tradusir la pagina"
+  },
+  "popupTitle": {
+    "message": "Tradusir la pagina"
+  },
+  "popupHint": {
+    "message": "Causissètz una lenga puis clicatz sus «Tradusir»"
+  },
+  "btnTranslate": {
+    "message": "Tradusir"
+  },
+  "btnTranslating": {
+    "message": "Traduccion…"
+  },
+  "btnShowOriginal": {
+    "message": "Afichar l'original"
+  },
+  "titleProgress": {
+    "message": "Traduccion… $PERCENT$ %",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Traduch : $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Error de traduccion : $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "La pagina es ja en $LANG$",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Cap de tèxte de tradusir trobat"
+  },
+  "statusError": {
+    "message": "Error : $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "La pagina es ja dins la lenga seleccionada"
+  },
+  "statusNothing": {
+    "message": "Cap de tèxte de tradusir"
+  },
+  "errorUnknown": {
+    "message": "desconeguda"
+  },
+  "errNoTab": {
+    "message": "Cap d'onglet actiu"
+  },
+  "errRefresh": {
+    "message": "Lo script de contengut es pas disponible — recargatz la pagina"
+  },
+  "errNoResponse": {
+    "message": "Cap de responsa del servici de traduccion"
+  },
+  "errIncomplete": {
+    "message": "Lo servici a renviat un resultat incomplèt"
+  },
+  "errBadResponse": {
+    "message": "Responsa invalida del servici de traduccion"
+  },
+  "pillProgress": {
+    "message": "Traduccion… $DONE$/$TOTAL$ ($PERCENT$ %)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Original restablit"
+  },
+  "popupSearch": {
+    "message": "Cercar"
+  }
+}

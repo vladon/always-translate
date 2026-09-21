@@ -25,7 +25,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 - A version number is **globally unique per addon across listed AND unlisted channels**.
 - A **deleted version number can never be reused** ("was uploaded before and deleted").
-- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2, 1.1.3. Next free: 1.1.5.**
+- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2, 1.1.3, 1.1.4 (store-approved). 1.1.5 = this release. Next free: 1.1.6.**
 - The store (listed) and GitHub releases share the **same build**: submit listed to AMO first, attach the approved signed file to GitHub after approval. Unlisted signing is no longer used.
 
 **Steps:**
@@ -49,9 +49,16 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 ## Current state (2026-09-22)
 
-- AMO store: **1.1.4** approved and live (`addons.mozilla.org/firefox/addon/always-translate`).
-- GitHub: release **v1.1.4** (Latest) with the store build; v1.1.2, v1.1.0 as older releases.
+- AMO store: **1.1.4** approved (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.5** (i18n + 188 target languages + new icon) — listed submission in progress.
+- GitHub: release **v1.1.4** (Latest) with the store build; v1.1.2, v1.1.0 as older releases. v1.1.5 follows after store approval.
 - Unlisted: 1.1.3 signed but never published on GitHub; 1.1.2 deleted from AMO (GitHub v1.1.2 asset still installs fine).
+
+## i18n pipeline (added in 1.1.5)
+
+- **Target languages**: `popup/langs.js` — `[code, nativeName, englishName]` triples mirroring Google Translate's NMT language table (<https://cloud.google.com/translate/docs/languages>). Order: `ru`, `en`, then by speaker popularity, long tail alphabetical. Extend by appending entries; the popup renders them with a search filter (native/English/code substring).
+- **UI locales**: `_locales/` covers 93 locales — every Firefox UI locale (verified against <https://releases.mozilla.org/pub/firefox/releases/<ver>/win64/xpi/>) except `ach`, `cak`, `trs`, `sat`, which intentionally fall back to English (no reliable translation available; help wanted).
+- **Every locale file carries the same key set** (24 keys incl. `popupSearch`); key/placeholder parity is validated by the assembler (git history `887eee2`-adjacent, `.scratch/assemble.mjs` pattern: scan `$NAME$` placeholders → `placeholders: {name: {$N}}`).
+- **Icon set**: `icons/icon-*.png` (32–128) rendered from `icons/icon.svg` via ImageMagick (`magick -background none icon.svg -resize NxN icon-N.png`). Path-only SVG — never use `<text>` in icons (font-dependent). Address-bar state icons stay `translate*.svg`.
 
 ## Testing & QA
 

@@ -109,5 +109,8 @@
   },
   "toastRestore": {
     "message": "Повернуто оригінал"
+  },
+  "popupSearch": {
+    "message": "Пошук"
   }
 }

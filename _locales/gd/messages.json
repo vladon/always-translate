@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "Eadar-theangaich an duilleag"
+  },
+  "popupTitle": {
+    "message": "Eadar-theangaich an duilleag"
+  },
+  "popupHint": {
+    "message": "Tagh cànan agus briog air “Eadar-theangaich”"
+  },
+  "btnTranslate": {
+    "message": "Eadar-theangaich"
+  },
+  "btnTranslating": {
+    "message": "Ag eadar-theangachadh…"
+  },
+  "btnShowOriginal": {
+    "message": "Seall an duilleag thùsail"
+  },
+  "titleProgress": {
+    "message": "Ag eadar-theangachadh… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "Eadar-theangaichte: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "Mearachd eadar-theangachaidh: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "Tha an duilleag ann an $LANG$ mu thràth",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "Cha deach teacsa a lorg airson eadar-theangachadh"
+  },
+  "statusError": {
+    "message": "Mearachd: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "Tha an duilleag sa chànan a thagh thu mu thràth"
+  },
+  "statusNothing": {
+    "message": "Chan eil teacsa airson eadar-theangachadh"
+  },
+  "errorUnknown": {
+    "message": "neo-aithnichte"
+  },
+  "errNoTab": {
+    "message": "Chan eil taba gnìomhach ann"
+  },
+  "errRefresh": {
+    "message": "Chan eil sgriobt na susbainte ri làimh — ath-nuadhaich an duilleag"
+  },
+  "errNoResponse": {
+    "message": "Chan eil freagairt o sheirbheis eadar-theangachaidh"
+  },
+  "errIncomplete": {
+    "message": "Thàinig toradh neo-iomlan bhon t-seirbheis"
+  },
+  "errBadResponse": {
+    "message": "Freagairt mì-dhligheach o sheirbheis eadar-theangachaidh"
+  },
+  "pillProgress": {
+    "message": "Ag eadar-theangachadh… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "Tha an duilleag thùsail air ais"
+  },
+  "popupSearch": {
+    "message": "Lorg"
+  }
+}

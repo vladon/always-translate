@@ -1,0 +1,116 @@
+{
+  "extName": {
+    "message": "Always Translate"
+  },
+  "extDescription": {
+    "message": "Always-visible translate button in the address bar. Pick the target language once, translate the whole page in one click (via Google Translate), one more click restores the original."
+  },
+  "defaultTitle": {
+    "message": "ಪುಟವನ್ನು ಅನುವಾದಿಸಿ"
+  },
+  "popupTitle": {
+    "message": "ಪುಟವನ್ನು ಅನುವಾದಿಸಿ"
+  },
+  "popupHint": {
+    "message": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು “ಅನುವಾದಿಸಿ” ಕ್ಲಿಕ್ ಮಾಡಿ"
+  },
+  "btnTranslate": {
+    "message": "ಅನುವಾದಿಸಿ"
+  },
+  "btnTranslating": {
+    "message": "ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ…"
+  },
+  "btnShowOriginal": {
+    "message": "ಮೂಲವನ್ನು ತೋರಿಸಿ"
+  },
+  "titleProgress": {
+    "message": "ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ… $PERCENT$%",
+    "placeholders": {
+      "percent": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleDone": {
+    "message": "ಅನುವಾದಿತ: $FROM$ → $TO$",
+    "placeholders": {
+      "from": {
+        "content": "$1"
+      },
+      "to": {
+        "content": "$2"
+      }
+    }
+  },
+  "titleError": {
+    "message": "ಅನುವಾದ ದೋಷ: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleSame": {
+    "message": "ಪುಟವು ಈಗಾಗಲೇ $LANG$ ಭಾಷೆಯಲ್ಲಿದೆ",
+    "placeholders": {
+      "lang": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleNothing": {
+    "message": "ಅನುವಾದಿಸಲು ಯಾವುದೇ ಪಠ್ಯ ಸಿಗಲಿಲ್ಲ"
+  },
+  "statusError": {
+    "message": "ದೋಷ: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSame": {
+    "message": "ಪುಟವು ಈಗಾಗಲೇ ಆಯ್ಕೆ ಮಾಡಿದ ಭಾಷೆಯಲ್ಲಿದೆ"
+  },
+  "statusNothing": {
+    "message": "ಅನುವಾದಿಸಲು ಯಾವುದೇ ಪಠ್ಯವಿಲ್ಲ"
+  },
+  "errorUnknown": {
+    "message": "ಅಜ್ಞಾತ"
+  },
+  "errNoTab": {
+    "message": "ಯಾವುದೇ ಸಕ್ರಿಯ ಟ್ಯಾಬ್ ಇಲ್ಲ"
+  },
+  "errRefresh": {
+    "message": "ವಿಷಯ ಸ್ಕ್ರಿಪ್ಟ್ ಲಭ್ಯವಿಲ್ಲ — ಪುಟವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ"
+  },
+  "errNoResponse": {
+    "message": "ಅನುವಾದ ಸೇವೆಯಿಂದ ಯಾವುದೇ ಪ್ರತಿಕ್ರಿಯೆ ಇಲ್ಲ"
+  },
+  "errIncomplete": {
+    "message": "ಸೇವೆಯು ಅಪೂರ್ಣ ಫಲಿತಾಂಶವನ್ನು ನೀಡಿದೆ"
+  },
+  "errBadResponse": {
+    "message": "ಅನುವಾದ ಸೇವೆಯಿಂದ ಅಮಾನ್ಯ ಪ್ರತಿಕ್ರಿಯೆ"
+  },
+  "pillProgress": {
+    "message": "ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ… $DONE$/$TOTAL$ ($PERCENT$%)",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "percent": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastRestore": {
+    "message": "ಮೂಲವನ್ನು ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ"
+  },
+  "popupSearch": {
+    "message": "ಹುಡುಕು"
+  }
+}
