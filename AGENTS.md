@@ -49,7 +49,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 ## Current state (2026-09-22)
 
-- AMO store: **1.1.4** approved (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.5** (i18n + 188 target languages + new icon) — listed submission in progress.
+- AMO store: **1.1.4** approved (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.5** (i18n + 188 target languages + new icon) submitted to listed channel, awaiting review.
 - GitHub: release **v1.1.4** (Latest) with the store build; v1.1.2, v1.1.0 as older releases. v1.1.5 follows after store approval.
 - Unlisted: 1.1.3 signed but never published on GitHub; 1.1.2 deleted from AMO (GitHub v1.1.2 asset still installs fine).
 
