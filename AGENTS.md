@@ -67,7 +67,7 @@ Supported since 1.1.7 via `browser_action` (toolbar button) declared ALONGSIDE `
 - Android has **no `pageAction` API** — `background.js` guards every `pageAction` call behind the `PAGE_ACTION` const (`API.pageAction || null`, absent on Android) and mirrors icon/title state to `BROWSER_ACTION` on both platforms.
 - Desktop keeps the address-bar icon as the primary UX; the `browser_action` toolbar button is a secondary duplicate there (Firefox puts new buttons in the extensions panel — users pin it if wanted; UIA check: "Open menu for Always Translate", visible).
 - `page_action` click and `browser_action` popup share the same `popup/popup.html` and state flow.
-- `strict_min_version` stays 140.0; the known lint warning `KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION` (data_collection_permissions needs Android 142) is accepted — on Android 140–141 the key is simply ignored.
+- `strict_min_version` is **142.0**: `data_collection_permissions` needs Firefox for Android 142; raising it from 140.0 eliminated the `KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION` lint warning (desktop 140–141 users are negligible).
 - Device testing on real Android hardware has not been performed; desktop verified, API surface per MDN.
 
 ## Testing & QA
