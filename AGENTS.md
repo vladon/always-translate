@@ -58,6 +58,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 - **UI locales**: `_locales/` covers 93 locales — every Firefox UI locale (verified against <https://releases.mozilla.org/pub/firefox/releases/<ver>/win64/xpi/>) except `ach`, `cak`, `trs`, `sat`, which intentionally fall back to English (no reliable translation available; help wanted).
 - **Every locale file carries the same key set** (24 keys incl. `popupSearch`); key/placeholder parity is validated by the assembler (git history `887eee2`-adjacent, `.scratch/assemble.mjs` pattern: scan `$NAME$` placeholders → `placeholders: {name: {$N}}`).
 - **Icon set**: `icons/icon-*.png` (32–128) rendered from `icons/icon.svg` via ImageMagick (`magick -background none icon.svg -resize NxN icon-N.png`). Path-only SVG — never use `<text>` in icons (font-dependent). Address-bar state icons stay `translate*.svg`.
+- **Listing icon caveat**: the AMO listing icon still showed the default placeholder after 1.1.5 was approved (the first listed versions used SVG icons, which AMO can't use for the listing image). Check `addons.mozilla.org/api/v5/addons/addon/...` `icons` field after every approval — if it still says `default-*.png` once a PNG-icon version is approved, escalate to AMO support ([addons-support](https://mozilla.zendesk.com)); there is no manual icon upload in DevHub.
 
 ## Testing & QA
 
