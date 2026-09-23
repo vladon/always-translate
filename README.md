@@ -25,7 +25,7 @@ An always-visible translate button in the Firefox address bar. Pick the target l
 
 - **Localized UI** — the popup, tooltip and in-page messages follow your Firefox interface language: 93 locales covering every Firefox interface language except a handful with no reliable translation (English fallback there). Right-to-left layout is used for Arabic, Hebrew and Persian.
 - The **default target language** matches your browser language until you pick one.
-- **188 target languages** — everything Google Translate supports, with in-popup search. Русский и English — первые в списке, далее по популярности.
+- **188 target languages** — everything Google Translate supports, with in-popup search. English and Русский lead the list, the rest follows by speaker popularity.
 
 ## Install
 
