@@ -25,7 +25,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 - A version number is **globally unique per addon across listed AND unlisted channels**.
 - A **deleted version number can never be reused** ("was uploaded before and deleted").
-- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2, 1.1.3, 1.1.4, 1.1.5 (all store-approved). Next free: 1.1.6.**
+- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.8 (1.1.6, 1.1.7, 1.1.8 never went live — superseded/deleted before review). 1.1.9 = this release. Next free: 1.1.10.**
 - The store (listed) and GitHub releases share the **same build**: submit listed to AMO first, attach the approved signed file to GitHub after approval. Unlisted signing is no longer used.
 
 **Steps:**
@@ -49,8 +49,8 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 ## Current state (2026-09-22)
 
-- AMO store: **1.1.5** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.6** (target list order: en, ru first) submitted to listed channel, awaiting review. **1.1.7** (Android toolbar support) built and verified on desktop — submit to listed channel right after 1.1.6 is approved (a newer submission supersedes/cancels the older one's review — do NOT submit early).
-- GitHub: release **v1.1.5** (Latest) with the store build; v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.6 then v1.1.7 follow after store approvals.
+- AMO store: **1.1.5** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.9** (Android toolbar support + en/ru-first target list + new icon) submitted to listed channel, awaiting review.
+- GitHub: release **v1.1.5** (Latest) with the store build; v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.9 follows after store approval.
 
 ## i18n pipeline (added in 1.1.5)
 
@@ -69,6 +69,7 @@ Supported since 1.1.7 via `browser_action` (toolbar button) declared ALONGSIDE `
 - `page_action` click and `browser_action` popup share the same `popup/popup.html` and state flow.
 - `strict_min_version` is **142.0**: `data_collection_permissions` needs Firefox for Android 142; raising it from 140.0 eliminated the `KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION` lint warning (desktop 140–141 users are negligible).
 - Device testing on real Android hardware has not been performed; desktop verified, API surface per MDN.
+- **Submission wizard trap**: the "Firefox for Android compatibility" checkbox (`compatible_apps` value `61`; `1` = Firefox) on the UPLOAD step of the submission wizard is **UNCHECKED by default**. For Android-capable releases it MUST be checked before clicking Continue — compatibility recorded at upload cannot be edited afterwards. Verify via API after submission: `compatibility.android` must exist.
 
 ## Testing & QA
 
