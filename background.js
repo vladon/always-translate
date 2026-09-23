@@ -14,6 +14,11 @@
 const API = typeof browser !== "undefined" ? browser : chrome;
 const SUPPORTED_URL = /^https?:/i;
 
+// Firefox for Android has no pageAction namespace; the browserAction toolbar
+// button exists on both platforms and mirrors the address-bar icon state.
+const PAGE_ACTION = API.pageAction || null;
+const BROWSER_ACTION = API.browserAction || null;
+
 // Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.
 const msg = (key, args) => API.i18n.getMessage(key, args) || key;
 
@@ -63,7 +68,8 @@ function applyState(tabId) {
       icon = frames[0];
       animTimers.set(tabId, setInterval(() => {
         frame = (frame + 1) % frames.length;
-        API.pageAction.setIcon({ tabId, path: frames[frame] }).catch(() => {});
+        if (PAGE_ACTION) PAGE_ACTION.setIcon({ tabId, path: frames[frame] }).catch(() => {});
+        if (BROWSER_ACTION) BROWSER_ACTION.setIcon({ tabId, path: frames[frame] }).catch(() => {});
       }, 400));
       break;
     }
@@ -83,15 +89,24 @@ function applyState(tabId) {
       break;
   }
 
-  API.pageAction.setTitle({ tabId, title });
-  API.pageAction.setIcon({ tabId, path: icon });
+  if (PAGE_ACTION) {
+    PAGE_ACTION.setTitle({ tabId, title });
+    PAGE_ACTION.setIcon({ tabId, path: icon });
+  }
+  if (BROWSER_ACTION) {
+    BROWSER_ACTION.setTitle({ tabId, title }).catch(() => {});
+    BROWSER_ACTION.setIcon({ tabId, path: icon }).catch(() => {});
+  }
 }
 
 function refreshTabVisibility(tabId, url) {
+  if (!PAGE_ACTION) {
+    return;
+  }
   if (SUPPORTED_URL.test(url || "")) {
-    API.pageAction.show(tabId).catch(() => {});
+    PAGE_ACTION.show(tabId).catch(() => {});
   } else {
-    API.pageAction.hide(tabId).catch(() => {});
+    PAGE_ACTION.hide(tabId).catch(() => {});
   }
 }
 

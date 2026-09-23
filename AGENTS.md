@@ -49,8 +49,8 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 ## Current state (2026-09-22)
 
-- AMO store: **1.1.5** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.6** (target list order: en, ru first) submitted to listed channel, awaiting review.
-- GitHub: release **v1.1.5** (Latest) with the store build; v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.6 follows after store approval.
+- AMO store: **1.1.5** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.6** (target list order: en, ru first) submitted to listed channel, awaiting review. **1.1.7** (Android toolbar support) built and verified on desktop — submit to listed channel right after 1.1.6 is approved (a newer submission supersedes/cancels the older one's review — do NOT submit early).
+- GitHub: release **v1.1.5** (Latest) with the store build; v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.6 then v1.1.7 follow after store approvals.
 
 ## i18n pipeline (added in 1.1.5)
 
@@ -59,6 +59,16 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 - **Every locale file carries the same key set** (24 keys incl. `popupSearch`); key/placeholder parity is validated by the assembler (git history `887eee2`-adjacent, `.scratch/assemble.mjs` pattern: scan `$NAME$` placeholders → `placeholders: {name: {$N}}`).
 - **Icon set**: `icons/icon-*.png` (32–128) rendered from `icons/icon.svg` via ImageMagick (`magick -background none icon.svg -resize NxN icon-N.png`). Path-only SVG — never use `<text>` in icons (font-dependent). Address-bar state icons stay `translate*.svg`.
 - **Listing icon caveat**: the AMO listing icon still showed the default placeholder after 1.1.5 was approved (the first listed versions used SVG icons, which AMO can't use for the listing image). Check `addons.mozilla.org/api/v5/addons/addon/...` `icons` field after every approval — if it still says `default-*.png` once a PNG-icon version is approved, escalate to AMO support ([addons-support](https://mozilla.zendesk.com)); there is no manual icon upload in DevHub.
+
+## Firefox for Android
+
+Supported since 1.1.7 via `browser_action` (toolbar button) declared ALONGSIDE `page_action`:
+
+- Android has **no `pageAction` API** — `background.js` guards every `pageAction` call behind the `PAGE_ACTION` const (`API.pageAction || null`, absent on Android) and mirrors icon/title state to `BROWSER_ACTION` on both platforms.
+- Desktop keeps the address-bar icon as the primary UX; the `browser_action` toolbar button is a secondary duplicate there (Firefox puts new buttons in the extensions panel — users pin it if wanted; UIA check: "Open menu for Always Translate", visible).
+- `page_action` click and `browser_action` popup share the same `popup/popup.html` and state flow.
+- `strict_min_version` stays 140.0; the known lint warning `KEY_FIREFOX_ANDROID_UNSUPPORTED_BY_MIN_VERSION` (data_collection_permissions needs Android 142) is accepted — on Android 140–141 the key is simply ignored.
+- Device testing on real Android hardware has not been performed; desktop verified, API surface per MDN.
 
 ## Testing & QA
 

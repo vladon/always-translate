@@ -32,7 +32,7 @@ An always-visible translate button in the Firefox address bar. Pick the target l
 - **Mozilla Add-ons store (recommended, gets automatic updates):** <https://addons.mozilla.org/firefox/addon/always-translate/>
 - **GitHub Releases:** download the signed `.xpi` from [Releases](https://github.com/vladon/always-translate/releases) and open it with Firefox (no automatic updates on this channel).
 
-Requires Firefox 140 or newer.
+Requires Firefox 140 or newer. Works on **Firefox for Android** too: the translate button lives in the toolbar there (Android has no address-bar icon API).
 
 ## Usage
 
