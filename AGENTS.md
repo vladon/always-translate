@@ -25,7 +25,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 - A version number is **globally unique per addon across listed AND unlisted channels**.
 - A **deleted version number can never be reused** ("was uploaded before and deleted").
-- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.8 (1.1.6, 1.1.7, 1.1.8 never went live — superseded/deleted before review). 1.1.9 = this release. Next free: 1.1.10.**
+- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.9 (1.1.6, 1.1.7, 1.1.8 never went live — superseded/deleted before review). 1.1.9 = approved Android release. Next free: 1.1.10.**
 - The store (listed) and GitHub releases share the **same build**: submit listed to AMO first, attach the approved signed file to GitHub after approval. Unlisted signing is no longer used.
 
 **Steps:**
@@ -49,8 +49,8 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 ## Current state (2026-09-22)
 
-- AMO store: **1.1.5** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.9** (Android toolbar support + en/ru-first target list + new icon) submitted to listed channel, awaiting review.
-- GitHub: release **v1.1.5** (Latest) with the store build; v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.9 follows after store approval.
+- AMO store: **1.1.9** approved and live (`addons.mozilla.org/firefox/addon/always-translate`).
+- GitHub: release **v1.1.9** (Latest) with the store build; v1.1.5, v1.1.4, v1.1.2, v1.1.0 as older releases.
 
 ## i18n pipeline (added in 1.1.5)
 
