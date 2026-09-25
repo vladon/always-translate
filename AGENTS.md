@@ -25,7 +25,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 - A version number is **globally unique per addon across listed AND unlisted channels**.
 - A **deleted version number can never be reused** ("was uploaded before and deleted").
-- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.9 (1.1.6, 1.1.7, 1.1.8 never went live — superseded/deleted before review). 1.1.9 = approved Android release. Next free: 1.1.10.**
+- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.10 (1.1.6–1.1.8 never went live — superseded/deleted before review; 1.1.10 created via API then deleted). 1.1.9 = approved Android release. Next free: 1.1.11.**
 - The store (listed) and GitHub releases share the **same build**: submit listed to AMO first, attach the approved signed file to GitHub after approval. Unlisted signing is no longer used.
 
 **Steps:**
