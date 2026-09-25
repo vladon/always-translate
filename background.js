@@ -14,9 +14,12 @@
 const API = typeof browser !== "undefined" ? browser : chrome;
 const SUPPORTED_URL = /^https?:/i;
 
-// Firefox for Android has no pageAction namespace; the browserAction toolbar
-// button exists on both platforms and mirrors the address-bar icon state.
-const PAGE_ACTION = API.pageAction || null;
+// Firefox for Android has no usable pageAction: the API namespace exists on
+// modern Android builds, but buttons surface as EXTENSIONS MENU entries, which
+// duplicates the browser_action toolbar button. Android is detected via the
+// background page's user agent (sync, no async init race).
+const IS_ANDROID = /Android/i.test(navigator.userAgent);
+const PAGE_ACTION = (IS_ANDROID || !API.pageAction) ? null : API.pageAction;
 const BROWSER_ACTION = API.browserAction || null;
 
 // Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.

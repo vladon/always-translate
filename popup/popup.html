@@ -2,12 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root { color-scheme: light dark; }
     body {
       width: 252px;
-      margin: 0;
+      margin: 0 auto;
       padding: 12px;
+      box-sizing: border-box;
       font: 13px/1.4 system-ui, sans-serif;
     }
     h1 { font-size: 13px; font-weight: 600; margin: 0 0 8px; }
@@ -42,6 +44,11 @@
       white-space: nowrap;
     }
     button.chip:hover { border-color: #0060df; }
+    @media (pointer: coarse) {
+      body { width: auto; max-width: 400px; padding: 14px; }
+      button.chip { padding: 9px 4px; font-size: 13.5px; }
+      #action { padding: 11px; font-size: 14px; }
+    }
     button.chip.selected {
       background: #0060df;
       border-color: #0060df;
