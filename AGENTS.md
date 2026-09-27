@@ -25,7 +25,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 - A version number is **globally unique per addon across listed AND unlisted channels**.
 - A **deleted version number can never be reused** ("was uploaded before and deleted").
-- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.10 (1.1.6–1.1.8 never went live — superseded/deleted before review; 1.1.10 created via API then deleted). 1.1.9 = approved Android release. Next free: 1.1.11.**
+- Therefore every number is burned forever once used anywhere. **Burned so far: 1.1.2–1.1.11 (1.1.6–1.1.8, 1.1.10, 1.1.11-partial never went live). 1.1.9 = approved Android release. Next free: 1.1.12.**
 - The store (listed) and GitHub releases share the **same build**: submit listed to AMO first, attach the approved signed file to GitHub after approval. Unlisted signing is no longer used.
 
 **Steps:**
@@ -47,10 +47,10 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 **If unlisted signing is ever needed again:** `web-ext sign` is broken ("Error decoding signature" with valid credentials). Use the API directly: `POST /api/v5/addons/upload/` as multipart with fields `upload` (file) + `channel`, then `POST /api/v5/addons/addon/<guid>/versions/` with `upload=<uuid>&channel=unlisted`. Remember the version number gets burned too.
 
-## Current state (2026-09-22)
+## Current state (2026-09-25)
 
-- AMO store: **1.1.9** approved and live (`addons.mozilla.org/firefox/addon/always-translate`).
-- GitHub: release **v1.1.9** (Latest) with the store build; v1.1.5, v1.1.4, v1.1.2, v1.1.0 as older releases.
+- AMO store: **1.1.9** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.11** (Android duplicate-menu-entry fix + responsive popup) submitted to listed channel, awaiting review.
+- GitHub: release **v1.1.9** (Latest) with the store build; v1.1.5, v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.11 follows after store approval.
 
 ## i18n pipeline (added in 1.1.5)
 
