@@ -47,10 +47,10 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 
 **If unlisted signing is ever needed again:** `web-ext sign` is broken ("Error decoding signature" with valid credentials). Use the API directly: `POST /api/v5/addons/upload/` as multipart with fields `upload` (file) + `channel`, then `POST /api/v5/addons/addon/<guid>/versions/` with `upload=<uuid>&channel=unlisted`. Remember the version number gets burned too.
 
-## Current state (2026-09-25)
+## Current state (2026-09-28)
 
-- AMO store: **1.1.9** approved and live (`addons.mozilla.org/firefox/addon/always-translate`); **1.1.11** (Android duplicate-menu-entry fix + responsive popup) submitted to listed channel, awaiting review.
-- GitHub: release **v1.1.9** (Latest) with the store build; v1.1.5, v1.1.4, v1.1.2, v1.1.0 as older releases. v1.1.11 follows after store approval.
+- AMO store: **1.1.11** approved and live (`addons.mozilla.org/firefox/addon/always-translate`) — Android compat + en/ru-first target list + new icon.
+- GitHub: release **v1.1.11** (Latest) with the store build; v1.1.9, v1.1.5, v1.1.4, v1.1.2, v1.1.0 as older releases.
 
 ## i18n pipeline (added in 1.1.5)
 
