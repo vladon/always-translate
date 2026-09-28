@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extName__",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "default_locale": "en_US",
   "description": "__MSG_extDescription__",
   "author": "vladon",
@@ -31,16 +31,14 @@
     "default_icon": {
       "32": "icons/translate.svg"
     },
-    "default_title": "__MSG_defaultTitle__",
-    "default_popup": "popup/popup.html"
+    "default_title": "__MSG_defaultTitle__"
   },
   "browser_action": {
     "default_icon": {
       "32": "icons/translate.svg",
       "64": "icons/translate.svg"
     },
-    "default_title": "__MSG_defaultTitle__",
-    "default_popup": "popup/popup.html"
+    "default_title": "__MSG_defaultTitle__"
   },
   "background": {
     "scripts": ["background.js"],

@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Hanapin"
+  },
+  "menuAllLanguages": {
+    "message": "Lahat ng wika…"
   }
 }

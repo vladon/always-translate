@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Qidirish"
+  },
+  "menuAllLanguages": {
+    "message": "Barcha tillar…"
   }
 }

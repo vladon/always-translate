@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Zoeken"
+  },
+  "menuAllLanguages": {
+    "message": "Alle talen…"
   }
 }

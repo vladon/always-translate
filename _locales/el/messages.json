@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Αναζήτηση"
+  },
+  "menuAllLanguages": {
+    "message": "Όλες οι γλώσσες…"
   }
 }

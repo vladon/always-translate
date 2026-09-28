@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Cercar"
+  },
+  "menuAllLanguages": {
+    "message": "Totas las lengas…"
   }
 }

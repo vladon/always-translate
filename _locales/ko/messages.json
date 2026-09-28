@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "검색"
+  },
+  "menuAllLanguages": {
+    "message": "모든 언어…"
   }
 }

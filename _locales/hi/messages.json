@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "खोजें"
+  },
+  "menuAllLanguages": {
+    "message": "सभी भाषाएँ…"
   }
 }

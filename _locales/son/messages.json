@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Zuwoo"
+  },
+  "menuAllLanguages": {
+    "message": "All languages…"
   }
 }

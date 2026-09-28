@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "搜索"
+  },
+  "menuAllLanguages": {
+    "message": "所有语言…"
   }
 }

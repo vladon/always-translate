@@ -113,6 +113,90 @@ function refreshTabVisibility(tabId, url) {
   }
 }
 
+// --- click = translate/restore, right-click = language picker ---------------
+
+async function getChosenLang() {
+  try {
+    const { targetLang } = await API.storage.local.get("targetLang");
+    return targetLang || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+async function onActionClicked(tab) {
+  if (!tab || tab.id == null) return;
+  const tl = await getChosenLang();
+  if (!tl) {
+    // No target language chosen yet: open the language picker.
+    API.tabs.create({ url: API.runtime.getURL("popup/popup.html") }).catch(() => {});
+    return;
+  }
+  const state = tabState.get(tab.id) || { kind: "idle" };
+  if (state.kind === "progress") return;
+  if (state.kind === "done") {
+    forwardToTab(tab.id, { type: "at:restore" }).catch(() => {});
+    return;
+  }
+  forwardToTab(tab.id, { type: "at:translate", tl }).catch(() => {});
+}
+
+// Context menu (right-click / long-press on the action buttons): pick a target
+// language without opening the popup.
+const MENU_TOP_LANGS = [
+  ["en", "English"], ["ru", "Русский"], ["zh-CN", "中文（简体）"], ["hi", "हिन्दी"],
+  ["es", "Español"], ["fr", "Français"], ["ar", "العربية"], ["bn", "বাংলা"],
+  ["pt", "Português"], ["ur", "اردو"], ["id", "Bahasa Indonesia"], ["de", "Deutsch"],
+];
+
+function ensureContextMenus() {
+  if (!API.menus || !API.menus.create) return;
+  const ctx = PAGE_ACTION && BROWSER_ACTION ? ["page_action", "browser_action"]
+    : PAGE_ACTION ? ["page_action"] : ["browser_action"];
+  try {
+    for (const [code, name] of MENU_TOP_LANGS) {
+      API.menus.create({ id: "at-lang-" + code, title: name, contexts: ctx, type: "radio", checked: false });
+    }
+    API.menus.create({ id: "at-sep", type: "separator", contexts: ctx });
+    API.menus.create({ id: "at-all-langs", title: msg("menuAllLanguages"), contexts: ctx });
+  } catch (e) { /* action context menus unsupported on this platform */ }
+}
+ensureContextMenus();
+
+async function syncMenuChecks() {
+  if (!API.menus || !API.menus.update) return;
+  const tl = await getChosenLang();
+  for (const [code] of MENU_TOP_LANGS) {
+    try { API.menus.update("at-lang-" + code, { checked: tl === code }); } catch (e) {}
+  }
+}
+syncMenuChecks();
+API.storage.onChanged.addListener((changes, area) => {
+  if (area === "local" && changes.targetLang) syncMenuChecks();
+});
+
+if (PAGE_ACTION) PAGE_ACTION.onClicked.addListener(onActionClicked);
+if (BROWSER_ACTION) BROWSER_ACTION.onClicked.addListener(onActionClicked);
+if (API.menus && API.menus.onClicked) {
+  API.menus.onClicked.addListener(async (info, tab) => {
+    if (info.menuItemId === "at-all-langs") {
+      await API.tabs.create({ url: API.runtime.getURL("popup/popup.html") }).catch(() => {});
+      return;
+    }
+    const m = /^at-lang-(.+)$/.exec(info.menuItemId || "");
+    if (!m) return;
+    const tl = m[1];
+    await API.storage.local.set({ targetLang: tl }).catch(() => {});
+    syncMenuChecks();
+    if (tab && tab.id != null) {
+      const state = tabState.get(tab.id) || { kind: "idle" };
+      if (state.kind !== "progress") {
+        forwardToTab(tab.id, { type: "at:translate", tl }).catch(() => {});
+      }
+    }
+  });
+}
+
 // --- page action lifecycle -------------------------------------------------
 
 API.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {

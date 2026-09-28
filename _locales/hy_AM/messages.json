@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Որոնել"
+  },
+  "menuAllLanguages": {
+    "message": "Բոլոր լեզուները…"
   }
 }

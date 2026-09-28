@@ -112,5 +112,8 @@
   },
   "popupSearch": {
     "message": "Претрага"
+  },
+  "menuAllLanguages": {
+    "message": "Сви језици…"
   }
 }
