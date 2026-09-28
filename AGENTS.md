@@ -35,6 +35,7 @@ Firefox MV2 WebExtension: always-visible translate button in the address bar, on
 3. **Build:** `npx web-ext build` → `web-ext-artifacts/always_translate-X.Y.Z.zip`.
 4. **Submit to AMO listed channel** (API cannot do listed — DevHub UI only, needs the user's AMO login in a spawned visible browser; a CAPTCHA may appear on first load):
    - `/developers/addon/always-translate/versions/submit/` — the wizard **silently preselects the unlisted channel**. Click `Change` → radio `On this site` → `Continue` (URL must become `.../submit/upload-listed`).
+   - **Upload backend can degrade**: 2026-09-25 the wizard's AJAX upload hung for minutes and the file never reached the server (verified via the API uploads list), while direct API uploads (`POST /api/v5/addons/upload/`) worked but their uuid is **refused by the wizard form** (injecting it into the hidden `upload` input + requestSubmit silently fails — the widget keeps its own upload state). If uploads hang: wait for AMO to recover and retry through the wizard; do not burn version numbers on failed attempts.
    - Upload the zip; AMO validates via AJAX (the file input clears itself — that is normal). Success markers: `See full validation report` link + hidden `input[name="upload"]` holding the uuid.
    - `Continue` → details step: fill **Release Notes** (`release_notes_en-us`) and **Notes to Reviewer** (`approval_notes` — disclose Google Translate data flow + source repo).
    - Source code step: answer **No** (plain unminified JS) → `Continue` → "You're done".
