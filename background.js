@@ -177,6 +177,14 @@ API.storage.onChanged.addListener((changes, area) => {
 
 if (PAGE_ACTION) PAGE_ACTION.onClicked.addListener(onActionClicked);
 if (BROWSER_ACTION) BROWSER_ACTION.onClicked.addListener(onActionClicked);
+
+// Desktop: strip the browser_action popup so toolbar clicks fire onClicked
+// (toggle + right-click context menu). Android keeps the manifest popup —
+// the menus API is unavailable on Android, so the popup IS the language
+// picker / translate panel there (tap = open, buttons inside act).
+if (!IS_ANDROID && BROWSER_ACTION) {
+  BROWSER_ACTION.setPopup({ popup: "" }).catch(() => {});
+}
 if (API.menus && API.menus.onClicked) {
   API.menus.onClicked.addListener(async (info, tab) => {
     if (info.menuItemId === "at-all-langs") {

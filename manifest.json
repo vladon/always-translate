@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extName__",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "default_locale": "en_US",
   "description": "__MSG_extDescription__",
   "author": "vladon",
@@ -38,7 +38,8 @@
       "32": "icons/translate.svg",
       "64": "icons/translate.svg"
     },
-    "default_title": "__MSG_defaultTitle__"
+    "default_title": "__MSG_defaultTitle__",
+    "default_popup": "popup/popup.html"
   },
   "background": {
     "scripts": ["background.js"],
