@@ -14,13 +14,23 @@
 const API = typeof browser !== "undefined" ? browser : chrome;
 const SUPPORTED_URL = /^https?:/i;
 
-// Firefox for Android has no usable pageAction: the API namespace exists on
-// modern Android builds, but buttons surface as EXTENSIONS MENU entries, which
-// duplicates the browser_action toolbar button. Android is detected via the
-// background page's user agent (sync, no async init race).
-const IS_ANDROID = /Android/i.test(navigator.userAgent);
-const PAGE_ACTION = (IS_ANDROID || !API.pageAction) ? null : API.pageAction;
+// Firefox for Android: the pageAction API exists on modern builds, but buttons
+// surface as EXTENSIONS MENU entries which would duplicate the browser_action
+// toolbar button — so pageAction is suppressed on Android. Detection: UA check
+// is unreliable on Fenix (it spoofs a desktop UA by default), so the platform
+// comes from runtime.getPlatformInfo (real OS, never spoofed).
+let PLATFORM_KNOWN = false;
+let IS_ANDROID = /Android|Mobi/i.test(navigator.userAgent);
+API.runtime.getPlatformInfo().then(info => {
+  IS_ANDROID = info.os === "android";
+  PLATFORM_KNOWN = true;
+}).catch(() => { PLATFORM_KNOWN = true; });
+const PAGE_ACTION = API.pageAction || null;
 const BROWSER_ACTION = API.browserAction || null;
+// Only touch the buttons once the platform is known: pageAction.show on
+// Android would recreate the duplicate menu entry; the desktop popup strip
+// on Android would kill the picker.
+const platformAllows = (fn) => () => { if (PLATFORM_KNOWN) fn(); };
 
 // Strings resolve against the Firefox UI language (_locales/<lang>), en_US fallback.
 const msg = (key, args) => API.i18n.getMessage(key, args) || key;
@@ -71,7 +81,8 @@ function applyState(tabId) {
       icon = frames[0];
       animTimers.set(tabId, setInterval(() => {
         frame = (frame + 1) % frames.length;
-        if (PAGE_ACTION) PAGE_ACTION.setIcon({ tabId, path: frames[frame] }).catch(() => {});
+        const pageActionAllowed = PAGE_ACTION && PLATFORM_KNOWN && !IS_ANDROID;
+        if (pageActionAllowed) PAGE_ACTION.setIcon({ tabId, path: frames[frame] }).catch(() => {});
         if (BROWSER_ACTION) BROWSER_ACTION.setIcon({ tabId, path: frames[frame] }).catch(() => {});
       }, 400));
       break;
@@ -92,7 +103,8 @@ function applyState(tabId) {
       break;
   }
 
-  if (PAGE_ACTION) {
+  const pageActionAllowed = PAGE_ACTION && PLATFORM_KNOWN && !IS_ANDROID;
+  if (pageActionAllowed) {
     PAGE_ACTION.setTitle({ tabId, title });
     PAGE_ACTION.setIcon({ tabId, path: icon });
   }
@@ -103,7 +115,8 @@ function applyState(tabId) {
 }
 
 function refreshTabVisibility(tabId, url) {
-  if (!PAGE_ACTION) {
+  const pageActionAllowed = PAGE_ACTION && PLATFORM_KNOWN && !IS_ANDROID;
+  if (!pageActionAllowed) {
     return;
   }
   if (SUPPORTED_URL.test(url || "")) {
@@ -183,7 +196,11 @@ if (BROWSER_ACTION) BROWSER_ACTION.onClicked.addListener(onActionClicked);
 // the menus API is unavailable on Android, so the popup IS the language
 // picker / translate panel there (tap = open, buttons inside act).
 if (!IS_ANDROID && BROWSER_ACTION) {
-  BROWSER_ACTION.setPopup({ popup: "" }).catch(() => {});
+  const stripBrowserActionPopup = () => {
+    BROWSER_ACTION.setPopup({ popup: "" }).catch(() => {});
+  };
+  if (PLATFORM_KNOWN) stripBrowserActionPopup();
+  else API.runtime.getPlatformInfo().then(() => stripBrowserActionPopup()).catch(() => {});
 }
 if (API.menus && API.menus.onClicked) {
   API.menus.onClicked.addListener(async (info, tab) => {
