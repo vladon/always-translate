@@ -96,9 +96,16 @@ function buildLangs(filter) {
     btn.textContent = native;
     btn.title = english + " (" + code + ")";
     btn.addEventListener("click", () => {
+      const changed = selected !== code;
       selected = code;
       API.storage.local.set({ targetLang: code }).catch(() => {});
       render();
+      if (changed) {
+        // Picking a different language retranslates the page right away.
+        API.runtime.sendMessage({ type: "at:translate-page", lang: code }).catch(() => {});
+        state.kind = "progress";
+        render();
+      }
     });
     grid.appendChild(btn);
   }
@@ -130,6 +137,20 @@ function buildLangs(filter) {
 
   await refresh();
   setInterval(refresh, 500);
+
+  // The click IS the action: with a chosen language the popup translates
+  // immediately (or restores when the page is already translated). The
+  // language grid is right here for changing the target language.
+  const autoAct = async () => {
+    if (!selected) return;
+    if (state.kind === "done") {
+      await sendToActiveTab({ type: "at:restore" }).catch(() => {});
+    } else if (state.kind !== "progress") {
+      await API.runtime.sendMessage({ type: "at:translate-page", lang: selected }).catch(() => {});
+    }
+    await refresh();
+  };
+  if (selected) autoAct().catch(() => {});
 
   document.getElementById("action").addEventListener("click", async () => {
     if (state.kind === "progress") {
