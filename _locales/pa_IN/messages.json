@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ…"
+  },
+  "optionsTitle": {
+    "message": "ਟੀਚਾ ਭਾਸ਼ਾ"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Visos kalbos…"
+  },
+  "optionsTitle": {
+    "message": "Target kalba"
+  },
+  "popupOpenSettings": {
+    "message": "Kalbos nustatymai"
   }
 }

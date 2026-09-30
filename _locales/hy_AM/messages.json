@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Բոլոր լեզուները…"
+  },
+  "optionsTitle": {
+    "message": "Թարգմանության լեզու"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

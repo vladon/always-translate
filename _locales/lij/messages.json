@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Tutte e lengue…"
+  },
+  "optionsTitle": {
+    "message": "Lengua de destinassiòn"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

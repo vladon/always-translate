@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Tất cả ngôn ngữ…"
+  },
+  "optionsTitle": {
+    "message": "Ngôn ngữ đích"
+  },
+  "popupOpenSettings": {
+    "message": "Cài đặt ngôn ngữ"
   }
 }

@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Όλες οι γλώσσες…"
+  },
+  "optionsTitle": {
+    "message": "Target language"
+  },
+  "popupOpenSettings": {
+    "message": "Ρυθμίσεις γλώσσας"
   }
 }

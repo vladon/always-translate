@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    :root { color-scheme: light dark; }
+    :root {
+      color-scheme: light dark;
+      --accent: #0060df;
+      --muted: #5b5b66;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --accent: #00ddff; --muted: #bfbfc9; }
+    }
     body {
       width: 252px;
       margin: 0 auto;
@@ -12,7 +19,15 @@
       box-sizing: border-box;
       font: 13px/1.4 system-ui, sans-serif;
     }
-    h1 { font-size: 13px; font-weight: 600; margin: 0 0 8px; }
+    .hdr { display: flex; align-items: center; justify-content: space-between; margin: 0 0 8px; }
+    h1 { font-size: 13px; font-weight: 600; margin: 0; }
+    #opts {
+      border: 0; background: transparent; color: var(--muted, #5b5b66);
+      padding: 3px; margin: -3px; cursor: pointer; border-radius: 5px;
+      display: inline-flex; line-height: 0;
+    }
+    #opts:hover { color: var(--accent, #0060df); background: color-mix(in srgb, currentColor 10%, transparent); }
+    #opts svg { width: 15px; height: 15px; }
     #search {
       width: 100%;
       box-sizing: border-box;
@@ -43,15 +58,15 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    button.chip:hover { border-color: #0060df; }
+    button.chip:hover { border-color: var(--accent); }
     @media (pointer: coarse) {
       body { width: auto; max-width: 400px; padding: 14px; }
       button.chip { padding: 9px 4px; font-size: 13.5px; }
       #action { padding: 11px; font-size: 14px; }
     }
     button.chip.selected {
-      background: #0060df;
-      border-color: #0060df;
+      background: var(--accent);
+      border-color: var(--accent);
       color: #fff;
     }
     #status {
@@ -66,7 +81,7 @@
       font: 600 13px system-ui, sans-serif;
       border: 0;
       border-radius: 6px;
-      background: #0060df;
+      background: var(--accent);
       color: #fff;
       cursor: pointer;
     }
@@ -75,7 +90,10 @@
   </style>
 </head>
 <body>
-  <h1 id="title"></h1>
+  <div class="hdr">
+    <h1 id="title"></h1>
+    <button id="opts" title=""></button>
+  </div>
   <input id="search" type="search" autocomplete="off">
   <div class="grid" id="langs"></div>
   <div id="status"></div>

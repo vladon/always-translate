@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Alle talen…"
+  },
+  "optionsTitle": {
+    "message": "Doeltaal"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

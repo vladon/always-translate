@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Gach teanga…"
+  },
+  "optionsTitle": {
+    "message": "Sprioc-theanga"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

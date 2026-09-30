@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "すべての言語…"
+  },
+  "optionsTitle": {
+    "message": "翻訳先の言語"
+  },
+  "popupOpenSettings": {
+    "message": "言語設定"
   }
 }

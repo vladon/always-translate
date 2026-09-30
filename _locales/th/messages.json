@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "ทุกภาษา…"
+  },
+  "optionsTitle": {
+    "message": "ภาษาเป้าหมาย"
+  },
+  "popupOpenSettings": {
+    "message": "ตั้งค่าภาษา"
   }
 }

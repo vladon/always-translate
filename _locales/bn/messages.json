@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "সব ভাষা…"
+  },
+  "optionsTitle": {
+    "message": "লক্ষ্য ভাষা"
+  },
+  "popupOpenSettings": {
+    "message": "ভাষা সেটিংস"
   }
 }

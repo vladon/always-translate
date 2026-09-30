@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Wszystkie godki…"
+  },
+  "optionsTitle": {
+    "message": "Target language"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

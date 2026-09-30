@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Pob iaith…"
+  },
+  "optionsTitle": {
+    "message": "Iaith darged"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

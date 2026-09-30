@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Todas as luengas…"
+  },
+  "optionsTitle": {
+    "message": "Luengache destino"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

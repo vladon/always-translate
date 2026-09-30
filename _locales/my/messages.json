@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "ဘာသာစုံ…"
+  },
+  "optionsTitle": {
+    "message": "ရည်မှန်းဘာသာ"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

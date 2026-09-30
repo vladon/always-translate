@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "அனைத்து மொழிகளும்…"
+  },
+  "optionsTitle": {
+    "message": "இலக்கு மொழி"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

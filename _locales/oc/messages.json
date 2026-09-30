@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Totas las lengas…"
+  },
+  "optionsTitle": {
+    "message": "Lenga cibla"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Na h-uile cànan…"
+  },
+  "optionsTitle": {
+    "message": "Cànan targaide"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

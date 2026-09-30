@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Svi jezici…"
+  },
+  "optionsTitle": {
+    "message": "Ciljni jezik"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

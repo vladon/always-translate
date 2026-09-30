@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "සියලු භාෂා…"
+  },
+  "optionsTitle": {
+    "message": "ඉලක්ක භාෂාව"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

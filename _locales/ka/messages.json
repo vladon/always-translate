@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "ყველა ენა…"
+  },
+  "optionsTitle": {
+    "message": "თარგმნის ენა"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "બધી ભાષાઓ…"
+  },
+  "optionsTitle": {
+    "message": "લક્ષ્ય ભાષા"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

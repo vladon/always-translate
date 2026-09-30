@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Toles llingües…"
+  },
+  "optionsTitle": {
+    "message": "Llingua de destín"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

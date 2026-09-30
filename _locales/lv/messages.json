@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Visas valodas…"
+  },
+  "optionsTitle": {
+    "message": "Mērķa valoda"
+  },
+  "popupOpenSettings": {
+    "message": "Valodas iestatījumi"
   }
 }

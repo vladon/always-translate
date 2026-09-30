@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Tüm diller…"
+  },
+  "optionsTitle": {
+    "message": "Hedef dil"
+  },
+  "popupOpenSettings": {
+    "message": "Dil ayarları"
   }
 }

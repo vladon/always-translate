@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Kaikki kielet…"
+  },
+  "optionsTitle": {
+    "message": "Kohdekieli"
+  },
+  "popupOpenSettings": {
+    "message": "Kieliasetukset"
   }
 }

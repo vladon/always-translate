@@ -279,3 +279,20 @@ API.runtime.onMessage.addListener((message, sender) => {
 
   return undefined;
 });
+
+// --- right-click on the action buttons: language settings -------------------
+
+if (API.menus && API.menus.create) {
+  const ctx = (PAGE_ACTION && BROWSER_ACTION) ? ["page_action", "browser_action"]
+    : PAGE_ACTION ? ["page_action"] : ["browser_action"];
+  try {
+    API.menus.create({ id: "at-open-options", title: msg("popupOpenSettings"), contexts: ctx });
+  } catch (e) { /* duplicate id on extension reload — menus persist */ }
+  if (API.menus.onClicked) {
+    API.menus.onClicked.addListener((info) => {
+      if (info.menuItemId === "at-open-options") {
+        API.runtime.openOptionsPage().catch(() => {});
+      }
+    });
+  }
+}

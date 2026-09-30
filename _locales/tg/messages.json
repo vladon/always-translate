@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Ҳамаи забонҳо…"
+  },
+  "optionsTitle": {
+    "message": "Забони ҳадаф"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

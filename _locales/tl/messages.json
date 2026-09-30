@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Lahat ng wika…"
+  },
+  "optionsTitle": {
+    "message": "Wikang target"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

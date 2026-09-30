@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Барлық тілдер…"
+  },
+  "optionsTitle": {
+    "message": "Мақсатты тіл"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

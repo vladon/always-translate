@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Kõik keeled…"
+  },
+  "optionsTitle": {
+    "message": "Sihtkeel"
+  },
+  "popupOpenSettings": {
+    "message": "Keeleseaded"
   }
 }

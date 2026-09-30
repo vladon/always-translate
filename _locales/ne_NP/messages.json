@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "सबै भाषाहरू…"
+  },
+  "optionsTitle": {
+    "message": "लक्ष्य भाषा"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

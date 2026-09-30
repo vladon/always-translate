@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Všechny jazyky…"
+  },
+  "optionsTitle": {
+    "message": "Cílový jazyk"
+  },
+  "popupOpenSettings": {
+    "message": "Nastavení jazyka"
   }
 }

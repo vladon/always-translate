@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Totus is limbas…"
+  },
+  "optionsTitle": {
+    "message": "Limba de destinu"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

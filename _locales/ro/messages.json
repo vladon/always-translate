@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Toate limbile…"
+  },
+  "optionsTitle": {
+    "message": "Limba țintă"
+  },
+  "popupOpenSettings": {
+    "message": "Setări de limbă"
   }
 }

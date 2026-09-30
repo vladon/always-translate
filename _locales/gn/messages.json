@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Ñe'ẽnguéra opaite…"
+  },
+  "optionsTitle": {
+    "message": "Target language"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

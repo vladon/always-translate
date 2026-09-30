@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Dutis lis lenghis…"
+  },
+  "optionsTitle": {
+    "message": "Lenghe di destinazion"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

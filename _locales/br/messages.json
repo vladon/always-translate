@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "An holl yezhoù…"
+  },
+  "optionsTitle": {
+    "message": "Target language"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

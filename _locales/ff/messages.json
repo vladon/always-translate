@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Ɗemngal fof…"
+  },
+  "optionsTitle": {
+    "message": "Target language"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

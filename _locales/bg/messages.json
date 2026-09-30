@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Всички езици…"
+  },
+  "optionsTitle": {
+    "message": "Език за превод"
+  },
+  "popupOpenSettings": {
+    "message": "Езикови настройки"
   }
 }

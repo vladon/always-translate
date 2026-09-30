@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "ಎಲ್ಲಾ ಭಾಷೆಗಳು…"
+  },
+  "optionsTitle": {
+    "message": "ಗುರಿ ಭಾಷೆ"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

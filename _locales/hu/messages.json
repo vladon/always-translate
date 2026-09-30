@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Minden nyelv…"
+  },
+  "optionsTitle": {
+    "message": "Célnyelv"
+  },
+  "popupOpenSettings": {
+    "message": "Nyelvi beállítások"
   }
 }

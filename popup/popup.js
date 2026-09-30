@@ -120,6 +120,9 @@ function buildLangs(filter) {
   document.getElementById("title").textContent = msg("popupTitle");
   document.title = msg("popupTitle");
   document.getElementById("action").textContent = msg("btnTranslate");
+  const optsBtn = document.getElementById("opts");
+  optsBtn.title = msg("popupOpenSettings");
+  optsBtn.addEventListener("click", () => { API.runtime.openOptionsPage().catch(() => {}); });
 
   const searchEl = document.getElementById("search");
   searchEl.placeholder = msg("popupSearch");

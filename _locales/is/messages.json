@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Öll tungumál…"
+  },
+  "optionsTitle": {
+    "message": "Markmál"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

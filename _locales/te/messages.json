@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "అన్ని భాషలు…"
+  },
+  "optionsTitle": {
+    "message": "లక్ష్య భాష"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

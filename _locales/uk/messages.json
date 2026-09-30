@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Усі мови…"
+  },
+  "optionsTitle": {
+    "message": "Цільова мова"
+  },
+  "popupOpenSettings": {
+    "message": "Налаштування мови"
   }
 }

@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Të gjitha gjuhët…"
+  },
+  "optionsTitle": {
+    "message": "Target language"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "سارے زبان…"
+  },
+  "optionsTitle": {
+    "message": "هدف ٻولي"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }

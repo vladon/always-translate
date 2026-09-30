@@ -115,5 +115,11 @@
   },
   "menuAllLanguages": {
     "message": "Barcha tillar…"
+  },
+  "optionsTitle": {
+    "message": "Mo'ljaltil"
+  },
+  "popupOpenSettings": {
+    "message": "Language settings"
   }
 }
